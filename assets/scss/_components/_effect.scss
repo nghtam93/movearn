@@ -1,0 +1,69 @@
+// Effect
+
+@-webkit-keyframes lightAnimation{
+    0%{-webkit-filter:brightness(1);filter:brightness(1)}
+    50%{-webkit-filter:brightness(1.3);filter:brightness(1.3)}
+    to{-webkit-filter:brightness(1);filter:brightness(1)}
+}
+@-webkit-keyframes Mousex{
+    from{-webkit-transform:translate(0,0px);}
+    65%{-webkit-transform:translate(0,10px);}
+    to{-webkit-transform:translate(0,-0px);}
+}
+@-moz-keyframes Mousex{
+    from{-moz-transform:translate(0,0px);}
+    65%{-moz-transform:translate(0,10px);}
+    to{-moz-transform:translate(0,-0px);}
+}
+@-webkit-keyframes Mousex2{
+    from{-webkit-transform:translate(0,0px);}
+    65%{-webkit-transform:translate(0,-10px);}
+    to{-webkit-transform:translate(0,-0px);}
+}
+@-moz-keyframes Mousex2{
+    from{-moz-transform:translate(0,0px);}
+    65%{-moz-transform:translate(0,-10px);}
+    to{-moz-transform:translate(0,-0px);}
+}
+@-webkit-keyframes lightAnimation2{
+    0%{-webkit-filter:brightness(1);filter:brightness(1)}
+    50%{-webkit-filter:brightness(1.15);filter:brightness(1.15)}
+    to{-webkit-filter:brightness(1);filter:brightness(1)}
+}
+@-webkit-keyframes translateY30{
+    0%{transform:translateY(0);}
+    50%{transform:translateY(30px);}
+    100%{transform:translateY(0);}
+}
+@keyframes spinner-rotate{
+    to{transform:rotate(360deg);}
+}
+@keyframes spinner-rotate2{
+    to{transform:rotate(-360deg);}
+}
+
+@keyframes animate{
+    0%{box-shadow:0 0 50px #0F0,inset 0 0 50px #0F0;filter:hue-rotate(0deg);}
+    20%{box-shadow:0 0 40px #0F0,inset 0 0 60px #0F0;}
+    40%{box-shadow:0 0 40px #0F0,inset 0 0 80px #0F0;}
+    60%{box-shadow:0 0 80px #0F0,inset 0 0 80px #0F0;}
+    80%{box-shadow:0 0 100px #0F0,inset 0 0 100px #0F0;}
+    100%{box-shadow:0 0 50px #0F0,inset 0 0 50px #0F0;filter:hue-rotate(360deg);}
+}
+
+.ef--zoomin .dnfix__thumb img{-webkit-transform:scale(1);transform:scale(1);-webkit-transition:.5s ease-in-out;transition:.5s ease-in-out}
+.ef--zoomin:hover .dnfix__thumb img{-webkit-transform:scale(1.1);transform:scale(1.1)}
+.ef--shine .dnfix__thumb{position:relative;display:block;overflow:hidden}
+.ef--shine .dnfix__thumb::before{
+    position:absolute;top:0;left:-85%;z-index:2;display:block;content:'';width:50%;height:100%;
+    background:-webkit-linear-gradient(left,rgba(255,255,255,0) 0%,rgba(255,255,255,.3) 100%);
+    background:linear-gradient(to right,rgba(255,255,255,0) 0%,rgba(255,255,255,.3) 100%);
+    -webkit-transform:skewX(-25deg);transform:skewX(-25deg)
+}
+.ef--shine:hover .dnfix__thumb::before{-webkit-animation:shine .8s;animation:shine .8s}
+@-webkit-keyframes shine{
+    100%{left:125%}
+}
+@keyframes shine{
+    100%{left:125%}
+}

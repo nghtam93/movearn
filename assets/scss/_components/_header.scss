@@ -1,0 +1,59 @@
+.header{
+	position: relative;
+	top: 0;
+	left: 0;
+	width: 100%;
+	max-width:100%;
+	z-index: 10;
+	padding: 20px 0;
+	background: #fff;
+	transition: all .5s;
+	&.-fix{
+		position: fixed;
+	}
+	&.is-sticky{
+		top: 0;
+		box-shadow: 0 0 10px #ccc;
+	}
+
+	.logo{
+		transition: opacity .5s;
+		animation: lightAnimation 1.5s ease-in-out infinite;
+		a{
+			display: inline-block;
+		}
+		img{
+			width: auto;
+			max-height: 40px;
+			transition: all .5s;
+		}
+	}
+
+
+	@media (max-width: 1399px){
+
+
+	}
+	@media (max-width: 1299px){
+
+	}
+	@media (max-width: 1199px){
+		padding:10px 0;
+
+	}
+	@media (max-width: 991px){
+
+		.logo img {
+		    max-height: 36px;
+		}
+
+	}
+
+	@media (max-width: 575px){
+
+	}
+}
+@keyframes stuckMoveDown{
+    0%{transform:translateY(-100%)}
+    100%{transform:translateY(0)}
+}

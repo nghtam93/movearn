@@ -1,0 +1,615 @@
+.home{
+
+	&-header{
+		position: relative;
+		&::after {
+			content: '';
+		    position: absolute;
+		    bottom: -54%;
+		    left: 0;
+		    width: 100%;
+		    height: 90%;
+		    background-image: url(../img/home-header-pattern.png);
+		    background-repeat: no-repeat;
+		    background-size: cover;
+		    pointer-events: none;
+		}
+		.sc-wrap {
+		    position: absolute;
+		    top: 0;
+		    left: 0;
+		    width: 100%;
+		    height: 100%;
+		    padding: 260px 0;
+		    z-index: 1;
+		}
+		.el-title{
+			font-family: 'Be Vietnam Pro';
+			font-weight: 400;
+			font-size: 140px;
+			line-height: 140px;
+			color: #000000;
+			margin-bottom: 0;
+		}
+		.el-pattern__coin{
+			position: absolute;
+		    bottom: -25%;
+		    right: 5%;
+		    width: 44%;
+		    height: 24%;
+		    background-image: url(../img/home-header-pattern2.png);
+		    background-repeat: no-repeat;
+		    background-size: contain;
+		    pointer-events: none;
+		    z-index: 1;
+		}
+		.el-pattern__pin{
+			position: absolute;
+		    bottom: -5%;
+		    left: 38%;
+		    width: 112px;
+		    height: 140px;
+		    background-image: url(../img/icon-map-pin.svg);
+		    background-repeat: no-repeat;
+		    background-size: contain;
+		    pointer-events: none;
+		    z-index: 1;
+		    &.-s2{
+		    	left: auto;
+			    right: 4%;
+			    bottom: -30%;
+		    }
+		}
+	}
+	&-about{
+		position: relative;
+		padding: 200px 0 100px;
+		.el-box{
+			padding: 90px 100px;
+			background: rgba(180, 187, 255, 0.08);
+			backdrop-filter: blur(60px);
+			-webkit-backdrop-filter: blur(60px);
+			border-radius: 48px;
+		}
+		.sc-header__title{
+			position: relative;
+			padding-right:80px;
+			margin-right: 80px;
+			&::before {
+				content: '';
+				width: 1px;
+				height: 36px;
+				background: #DBDEE2;;
+				position: absolute;
+				top: 50%;
+				right: 0;
+				transform: translateY(-50%);
+			}
+		}
+
+	}
+
+	&-elements{
+		position: relative;
+		padding: 100px 0 200px;
+		&::after {
+			content: '';
+			position: absolute;
+			top: 40%;
+			left: 0;
+			width: 100%;
+			height: 98%;
+			background-image: url(../img/elements-bg-01.png);
+			background-repeat: no-repeat;
+			background-size: contain;
+			z-index: -2;
+			pointer-events: none;
+		}
+		.sc-header__title{
+			font-weight: 400;
+			font-size: 90px;
+			line-height: 114px;
+			color: #000000;
+			.-number{
+				font-family: 'Be Vietnam Pro';
+				font-style: normal;
+				font-weight: 300;
+				font-size: 140px;
+				line-height: 177px;
+
+				/* linear */
+
+				background: linear-gradient(85.15deg, #F44369 0%, #3D2DFF 152.74%);
+				-webkit-background-clip: text;
+				-webkit-text-fill-color: transparent;
+				background-clip: text;
+				text-fill-color: transparent;
+			}
+		}
+
+		.el-items{
+			.el-item{
+				margin-bottom: -80px;
+				&__thumb {
+					position: relative;
+					&__canvas{
+						content: '';
+					    position: absolute;
+					    top: 0;
+					    left: 0;
+					    width: 600px;
+					    height: 600px;
+					    background-repeat: no-repeat;
+					    background-size: contain;
+					    z-index: -1;
+					    pointer-events: none;
+					}
+				}
+				.dnfix__thumb{
+					padding-top: 88%;
+				}
+				&__title{
+					font-family: 'Be Vietnam Pro';
+					font-weight: 600;
+					font-size: 44px;
+					line-height: 54px;
+					text-transform: capitalize;
+					color: #F44369;
+					margin-bottom: 34px;
+				}
+			}
+		}
+	}
+
+	&-nft{
+		position: relative;
+		padding: 100px 0 150px;
+		&::after {
+			content: '';
+		    position: absolute;
+		    bottom: -8%;
+		    left: 0;
+		    width: 100%;
+		    height: 93%;
+		    background-image: url(../img/home-header-pattern.png);
+		    background-repeat: no-repeat;
+		    background-size: cover;
+		    pointer-events: none;
+		    transform: scaleX(-1);
+		    z-index: -1;
+		}
+		.slider-item{
+			padding: 100px 32px;
+			background: linear-gradient(180deg, rgba(248, 224, 224, 0.15) 0%, rgba(211, 210, 255, 0.15) 100%);
+			backdrop-filter: blur(60px);
+			-webkit-backdrop-filter: blur(60px);
+			border-radius: 48px;
+			border: 2px solid #D3D2FF;
+			.dnfix__thumb{
+				padding-top: 100%;
+			}
+			&__wrap{
+
+			}
+		}
+	}
+
+	&-dao{
+		position: relative;
+		.sc-header{
+
+		}
+		.el__col{
+			position: relative;
+			&:first-child{
+				padding-left: var(--container-half-space);
+				padding-right: 80px;
+				background: linear-gradient(85.15deg, #F44369 0%, #3D2DFF 152.74%);
+			}
+		}
+		.nav-dao{
+			position: absolute;
+			top: 0;
+			left: 0;
+			width: 240px;
+			height: 100%;
+			z-index: 1;
+			.nav-item{
+				position: relative;
+				width: 100%;
+				height: 20%;
+				&:not(:last-child){
+					&:before{
+						content: '';
+						position: absolute;
+						bottom: 0;
+						left: 0;
+						width: 100%;
+						height: 1px;
+						background: linear-gradient(90deg, rgba(0, 0, 0, 0.73) 0%, rgba(0, 0, 0, 0) 100%);
+						opacity: .3;
+					}
+				}
+			}
+			.nav-link{
+				width: 100%;
+				height: 100%;
+				padding: 24px 14px;
+				font-family: 'Be Vietnam Pro';
+				font-weight: 700;
+				font-size: 20px;
+				line-height: 28px;
+				text-align: center;
+				text-transform: capitalize;
+				color: #FFFFFF;
+				border: 0;
+				background: linear-gradient(90deg, rgba(0, 0, 0, 0.73) 0%, rgba(0, 0, 0, 0) 100%);
+				&:before{
+					content: '';
+					position: absolute;
+					top: 0;
+					bottom: 0;
+					left: 0;
+					width: 4px;
+					height: 10%;
+					margin: auto;
+					background-color: transparent;
+					transition: all .5s;
+				}
+				&.active{
+					color: #F44369;
+					&:before{
+						height: 100%;
+						background-color: #F44369;
+					}
+				}
+			}
+		}
+	}
+
+	&-features{
+		position: relative;
+		padding: 80px 0 150px;
+		&:before{
+			content: '';
+			position: absolute;
+			top: 0;
+			left: 0;
+			width: 100%;
+			height: 100%;
+			background-image: url(../img/features-bg.png);
+			background-repeat: no-repeat;
+			background-size: contain;
+			z-index: -1;
+			pointer-events: none;
+		}
+		&::after {
+			content: '';
+		    position: absolute;
+		    bottom: -5%;
+		    right: 5%;
+		    width: 33%;
+		    height: 29%;
+		    background-image: url(../img/features-pattern.png);
+		    background-repeat: no-repeat;
+		    background-size: contain;
+		    z-index: 1;
+		    pointer-events: none;
+		}
+		.el-items{
+			margin-bottom: 100px;
+		}
+		.el-item{
+			margin-bottom: 24px;
+			.dnfix__thumb{
+				width: 90px;
+				padding-top: 90px;
+			}
+			&__thumb{
+				margin-bottom: 48px;
+			}
+			&__title{
+				font-family: 'Be Vietnam Pro';
+				font-weight: 600;
+				font-size: 24px;
+				line-height: 34px;
+				color: #000000;
+				margin-bottom: 16px;
+			}
+		}
+
+		.el-box{
+			&__title{
+				font-family: 'Be Vietnam Pro';
+				font-weight: 600;
+				font-size: 90px;
+				line-height: 90px;
+				background: linear-gradient(85.15deg, #F44369 0%, #3D2DFF 152.74%);
+				-webkit-background-clip: text;
+				-webkit-text-fill-color: transparent;
+				background-clip: text;
+				text-fill-color: transparent;
+				margin-bottom: 55px;
+			}
+			&__excerpt{
+				font-family: 'Poppins';
+				font-weight: 700;
+				color: #000000;
+
+			}
+		}
+	}
+
+	&-team{
+		position: relative;
+		padding: 100px 0;
+		background-repeat: no-repeat;
+		background-size:cover;
+
+
+		.slider-item{
+			background: #FFFFFF;
+			border-radius: 48px;
+			overflow: hidden;
+			.dnfix__thumb{
+				padding-top: 100%;
+			}
+			&__meta{
+				padding: 26px;
+			}
+			&__title{
+				font-family: 'Be Vietnam Pro';
+				font-weight: 600;
+				font-size: 24px;
+				line-height: 34px;
+				color: #000000;
+			}
+			&__sub{
+				font-size: 14px;
+				line-height: 22px;
+				color: #000000;
+			}
+			&__social{
+				margin-top: 24px;
+				i{
+					width: 20px;
+					height: 20px;
+					margin: 0 8px;
+					&:hover{
+						&:before{
+							background-color: #097afe;
+						}
+					}
+				}
+			}
+		}
+		.flickity-page-dots .dot {
+		    background: rgba(255, 255, 255, .1);
+		    &.is-selected, &:hover {
+			    background: #fff;
+			}
+		}
+
+	}
+
+	&-roadmap{
+		position: relative;
+		padding: 100px 0;
+		.sc-header{
+			margin-bottom: 150px;
+		}
+		.el__col{
+			&:nth-child(2){
+				.el-item{
+					top: -26%;
+				}
+			}
+			&:nth-child(3){
+				.el-item{
+					top: 25%;
+				}
+			}
+			&:nth-child(4){
+				.el-item{
+					top: 50%;
+				}
+			}
+		}
+		.el-item{
+			position: relative;
+			padding: 32px;
+			background: #FFFFFF;
+			box-shadow: 0px 9px 29px rgba(0, 0, 0, 0.18);
+			border-radius: 16px;
+			z-index: 1;
+			&__title{
+				font-family: 'Be Vietnam Pro';
+				font-weight: 600;
+				font-size: 24px;
+				line-height: 34px;
+				color: #000000;
+				margin-bottom: 8px;
+			}
+			&:before{
+				content: '';
+				position: absolute;
+				bottom: -140px;
+				left: 0;
+				right: 0;
+				margin: auto;
+				width: 90px;
+				height: 112px;
+				background-image: url(../img/icon-map-pin.svg);
+				background-repeat: no-repeat;
+				background-size: contain;
+				z-index: 1;
+				pointer-events: none;
+			}
+		}
+		.el-road{
+			position: relative;
+			width: 100%;
+			padding-top: 21%;
+			background-image: url(../img/roadmap-road.svg);
+			background-repeat: no-repeat;
+			background-size:cover;
+		}
+	}
+
+	&-token{
+		position: relative;
+		padding: 100px 0;
+		.el-box{
+			position: relative;
+			display: flex;
+			align-items: center;
+			justify-content: center;
+			width: 542px;
+			height: 542px;
+			margin: 120px auto 0;
+			background-image: url(../img/token-circle-out.png);
+			background-repeat: no-repeat;
+			background-size:contain;
+			&:before{
+				content: '';
+			    position: absolute;
+			    top: 9%;
+				left: 10%;
+			    width: 82%;
+			    height: 82%;
+			    margin: auto;
+			    background-image: url(../img/token-circle.png);
+			    background-repeat: no-repeat;
+			    background-size: contain;
+			    z-index: -1;
+			    pointer-events: none;
+			   	-webkit-animation: 2s linear infinite spinner-border;
+    			animation: 2s linear infinite spinner-border;
+			}
+		}
+
+		.el-item{
+			position: absolute;
+			font-weight: 400;
+			font-size: 18px;
+			line-height: 34px;
+			color: #000000;
+			&:before{
+    			content: '';
+    			position: absolute;
+    			background-repeat: no-repeat;
+    			background-size: contain;
+    			z-index: -1;
+    			pointer-events: none;
+    		}
+			.-number{
+				margin-top: 6px;
+				font-weight: 700;
+				font-size: 48px;
+				line-height: 34px;
+				color: #DE3184;
+			}
+			&.-s1 {
+			    top: -16%;
+    			left: 30%;
+    			&:before{
+    				width: 38px;
+				    height: 84px;
+				    right: -38px;
+				    top: 55px;
+    				background-image: url(../img/roadmap-line-01.svg);
+    			}
+			}
+			&.-s2 {
+			    top: 40%;
+    			left: -25%;
+    			&:before{
+    				width: 90px;
+				    height: 30px;
+				    right: -90px;
+				    top: 55px;
+    				background-image: url(../img/roadmap-line-02.svg);
+    			}
+			}
+			&.-s3 {
+			    top: -4%;
+    			right: -9%;
+    			&:before{
+    				width: 69px;
+				    height: 53px;
+				    left: -69px;
+				    top: 55px;
+    				background-image: url(../img/roadmap-line-03.svg);
+    			}
+			}
+			&.-s4 {
+			    top: 8%;
+    			left: -20%;
+    			&:before{
+    				width: 72px;
+				    height: 42px;
+				    right: -72px;
+				    top: 55px;
+    				background-image: url(../img/roadmap-line-04.svg);
+    			}
+			}
+			&.-s5 {
+			    top: 12%;
+    			right: -18%;
+    			&:before{
+    				width: 79px;
+				    height: 11px;
+				    left: -90px;
+				    top: 55px;
+    				background-image: url(../img/roadmap-line-05.svg);
+    			}
+			}
+			&.-s6 {
+			    top: 36%;
+    			right: -30%;
+    			&:before{
+    				width: 65px;
+				    height: 25px;
+				    left: -65px;
+				    top: 30px;
+    				background-image: url(../img/roadmap-line-06.svg);
+    			}
+			}
+			&.-s7 {
+			   	bottom: -3%;
+    			right: -5%;
+    			&:before{
+    				width: 73px;
+				    height: 63px;
+				    left: -80px;
+				    top: 0;
+    				background-image: url(../img/roadmap-line-07.svg);
+    			}
+			}
+			&.-s8 {
+			    bottom: 19%;
+    			left: -17%;
+    			&:before{
+    				width: 96px;
+				    height: 30px;
+				    right: -100px;
+				    top: 26px;
+    				background-image: url(../img/roadmap-line-08.svg);
+    			}
+			}
+		}
+	}
+
+	@media (max-width: 1199px){
+
+	}
+	@media (max-width: 991px){
+
+	}
+	@media (max-width: 767px){
+
+	}
+	@media (max-width: 575px){
+
+	}
+}
