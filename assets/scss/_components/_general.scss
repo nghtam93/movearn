@@ -34,8 +34,32 @@
         z-index: -2;
         text-align: center;
     }
-    @media (max-width:1399px){
-
+    @media (max-width:1599px){
+        &__title {
+            font-size: 50px;
+            line-height: 64px;
+        }
+        &__sub {
+            font-size: 26px;
+            line-height: 42px;
+        }
+    }
+    @media (max-width:1199px){
+        &__title {
+            font-size: 42px;
+            line-height: 52px;
+        }
+        &__excerpt {
+            margin-top: 24px;
+        }
+        &__sub {
+            font-size: 20px;
+            line-height: 32px;
+        }
+        &__marquee {
+            font-size: 200px;
+            line-height: 200px;
+        }
     }
     @media (max-width:991px){
     }

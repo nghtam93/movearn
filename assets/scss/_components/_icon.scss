@@ -23,6 +23,12 @@
     }
 }
 .icon{
+	&-close:before{
+        top: 2px;
+        width: 20px;
+        height: 20px;
+        -webkit-mask-image: url(../img/icon-close.svg);
+    }
 	&-facebook:before{
 		top: 2px;
 	    width: 20px;

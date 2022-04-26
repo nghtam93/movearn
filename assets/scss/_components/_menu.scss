@@ -140,7 +140,7 @@ $font-color: #000000;
     right:-420px;
     width:400px;
     opacity:0;
-    background:#22171B;
+    background:#ffffff;
     transition:all .25s;
     z-index:999;
     font-size: 18px;
@@ -159,7 +159,7 @@ $font-color: #000000;
         display: flex;
         align-items: center;
         padding: 20px 50px;
-        color: #fff;
+        color: #000;
         img{
             max-height: 50px;
         }
@@ -184,7 +184,7 @@ $font-color: #000000;
             a{
                 display: block;
                 position: relative;
-                color: #fff;
+                color: #000;
                 padding: 12px 24px;
                 transition: all .5s;
                 &:hover{
@@ -193,7 +193,8 @@ $font-color: #000000;
             }
             &.active, &.current-menu-item, &.current_page_item{
                 &>a{
-                    background: #141414;
+                    background: #0a7afe;
+                    color: #fff;
                 }
             }
         }
@@ -234,6 +235,7 @@ $font-color: #000000;
 
     @media (max-width: 575px){
         width: 100%;
+
         .nav__mobile--ul{
             li{
                 a{
@@ -242,18 +244,20 @@ $font-color: #000000;
             }
         }
     }
+    @media (min-width: 576px){
+        box-shadow: 0 0 4px #dadada;
+    }
 }
 /**/
 
 /**/
 .menu-mb__btn{
-    display: none;
     position: relative;
     cursor: pointer;
     width:40px;
     .iconz-bar{
         width:30px;transition:all 0.2s;
-        background: #fff;
+        background: linear-gradient(85.15deg, #F44369 0%, #3D2DFF 152.74%);
         display:block;height:3px;border-radius:2px;
         &+.iconz-bar{margin-top:5px;}
         &:nth-of-type(1){}

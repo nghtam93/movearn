@@ -36,11 +36,19 @@ body {
     background: #fff;
     letter-spacing: 0.01em;
     --header-height:86px;
-    --container-space: calc( (100vw - 1386px) );
+    --container: 1386px;
+    --container-space: calc( (100vw - var(--container) ) );
     --container-half-space: calc( var(--container-space)/2 );
-    @media (max-width: 1399px){
-        --container-space: calc( (100vw - 1124px) );
+    @media (max-width: 1599px){
+        --container: 1224px;
     }
+    @media (max-width: 1399px){
+        --container: 1124px;
+    }
+    @media (max-width: 1199px){
+        --container: 960px;
+    }
+
 }
 
 a, a:hover {
@@ -114,6 +122,10 @@ hr{
         border-color: #40160E;
         color: #fff;
         -webkit-filter:brightness(1.25);filter:brightness(1.25)
+    }
+    &.-medium{
+        font-size: 18px;
+        padding: 14px 20px
     }
     &-primary{
         text-transform: initial;

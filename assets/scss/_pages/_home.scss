@@ -20,8 +20,10 @@
 		    left: 0;
 		    width: 100%;
 		    height: 100%;
-		    padding: 260px 0;
+		    padding: 100px 0;
 		    z-index: 1;
+		    display: flex;
+		    align-items: center;
 		}
 		.el-title{
 			font-family: 'Be Vietnam Pro';
@@ -268,6 +270,12 @@
 				}
 			}
 		}
+		.el-tab__item{
+			.dnfix__thumb{
+				min-height: 350px;
+				padding-top: 56%;
+			}
+		}
 	}
 
 	&-features{
@@ -497,7 +505,7 @@
     			animation: 2s linear infinite spinner-border;
 			}
 			&__logo{
-				animation: suntory-alo-circle-img-anim 4s infinite;
+				animation: suntory-alo-circle-img-anim 2s infinite;
 			}
 		}
 
@@ -613,7 +621,182 @@
 		}
 	}
 
+	@media (max-width: 1399px){
+		&-header{
+			.el-title {
+			    font-size: 120px;
+			    line-height: 120px;
+			}
+		}
+		&-about{
+			.sc-header__title {
+			    padding-right: 60px;
+			    margin-right: 60px;
+			}
+			.el-box {
+			    padding: 80px 60px;
+			}
+		}
+		&-elements{
+			.sc-header__title {
+			    font-size: 70px;
+			    line-height: 80px;
+			    .-number {
+				    font-size: 120px;
+				    line-height: 120px;
+				}
+			}
+
+			.el-items{
+				.el-item__title {
+				    font-size: 40px;
+				    line-height: 48px;
+				}
+			}
+
+		}
+		&-dao{
+			.nav-dao .nav-link {
+			    padding: 10px 12px;
+			    font-size: 16px;
+			    line-height: 26px;
+			}
+		}
+		&-features{
+			    padding: 80px 0 120px;
+			&::after {
+			    bottom: -10%;
+			}
+			.el-item__title {
+			    font-size: 22px;
+			    line-height: 30px;
+			}
+			.el-box__title {
+			    font-size: 80px;
+			    line-height: 86px;
+			}
+			.el-item__excerpt {
+			    font-size: 16px;
+			}
+
+		}
+		&-team{
+			.slider-item__title {
+			    font-size: 20px;
+			    line-height: 34px;
+			}
+		}
+
+	}
 	@media (max-width: 1199px){
+		&-header{
+			.ratio {
+			    min-height: 600px;
+			}
+			.el-title {
+			    font-size: 80px;
+			    line-height: 90px;
+			}
+		}
+		&-about {
+		    padding: 200px 0 80px;
+		    .el-box {
+			    padding: 60px 40px;
+			}
+		}
+		&-elements{
+			padding: 80px 0;
+			.sc-header__title {
+			    font-size: 60px;
+			    line-height: 64px;
+			    .-number {
+				    font-size: 100px;
+				    line-height: 100px;
+				}
+			}
+
+			.el-items{
+				.el-item__title {
+				    font-size: 32px;
+				    line-height: 38px;
+				    margin-bottom: 24px;
+				}
+				.el-item__thumb__canvas {
+				    width: 450px;
+				    height: 450px;
+				}
+			}
+		}
+		&-dao{
+			.nav-dao {
+			    width: 200px;
+			    .nav-link {
+				    padding: 2px 8px;
+				    font-size: 14px;
+				    line-height: 22px;
+				}
+			}
+		}
+		&-features{
+			&::after {
+			    bottom: 0;
+			    height: 17%;
+			}
+			.el-box__title {
+			    font-size: 60px;
+			    line-height: 72px;
+			}
+			.el-item__title {
+			    font-size: 18px;
+			    line-height: 24px;
+			    margin-bottom: 8px;
+			}
+			.el-item__excerpt {
+			    font-size: 14px;
+			}
+		}
+		&-team {
+		    padding: 80px 0;
+		    .slider-item__meta {
+			    padding: 12px;
+			}
+			.slider-item__social {
+			    margin-top: 12px;
+			}
+		}
+		&-roadmap {
+		    padding: 80px 0;
+		    .el-item {
+			    padding: 24px;
+			    &:before {
+				    bottom: -80px;
+				    width: 50px;
+				    height: 60px;
+				}
+			}
+		    .el-item__title {
+			    font-size: 20px;
+			    line-height: 30px;
+			}
+		    .el-item__excerpt {
+			    font-size: 14px;
+			}
+		}
+		&-token {
+		    padding: 80px 0;
+		    .el-item .-number {
+			    font-size: 32px;
+			    line-height: 28px;
+			}
+			.el-item.-s2 {
+			    top: 40%;
+			    left: -18%;
+			}
+			.el-item.-s7 {
+			    bottom: -1%;
+			    right: -5%;
+			}
+		}
 
 	}
 	@media (max-width: 991px){
