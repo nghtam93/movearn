@@ -42,6 +42,7 @@
 		    background-size: contain;
 		    pointer-events: none;
 		    z-index: 1;
+		    // animation: Mousex 5s infinite;
 		}
 		.el-pattern__pin{
 			position: absolute;
@@ -54,10 +55,12 @@
 		    background-size: contain;
 		    pointer-events: none;
 		    z-index: 1;
+		    animation: Mousex 5s infinite linear, lightAnimation 3s infinite;
 		    &.-s2{
 		    	left: auto;
 			    right: 4%;
 			    bottom: -30%;
+			    animation: Mousex2 5s infinite linear, lightAnimation 4s infinite;
 		    }
 		}
 	}
@@ -353,6 +356,7 @@
 			overflow: hidden;
 			.dnfix__thumb{
 				padding-top: 100%;
+				filter: grayscale(100%);
 			}
 			&__meta{
 				padding: 26px;
@@ -380,6 +384,11 @@
 							background-color: #097afe;
 						}
 					}
+				}
+			}
+			&:hover{
+				.dnfix__thumb{
+					filter: grayscale(0);
 				}
 			}
 		}
@@ -470,6 +479,7 @@
 			background-image: url(../img/token-circle-out.png);
 			background-repeat: no-repeat;
 			background-size:contain;
+			z-index: 1;
 			&:before{
 				content: '';
 			    position: absolute;
@@ -485,6 +495,9 @@
 			    pointer-events: none;
 			   	-webkit-animation: 2s linear infinite spinner-border;
     			animation: 2s linear infinite spinner-border;
+			}
+			&__logo{
+				animation: suntory-alo-circle-img-anim 4s infinite;
 			}
 		}
 

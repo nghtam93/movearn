@@ -100,29 +100,19 @@ hr{
     min-width: 180px;
     padding: 12px 20px;
     border: 0;
-
     background: linear-gradient(85.15deg, #F44369 0%, #3D2DFF 152.74%);
     border-radius: 100px;
-
     text-align: center;
     text-transform: uppercase;
     color: #fff;
-
-
     font-weight: 700;
     font-size: 14px;
     line-height: 22px;
-    /* identical to box height, or 157% */
-
-
     color: #FFFFFF;
-
-
     transition: all .5s;
     &:hover{
         border-color: #40160E;
         color: #fff;
-        transform: translateY(-5px);
         -webkit-filter:brightness(1.25);filter:brightness(1.25)
     }
     &-primary{
@@ -185,10 +175,11 @@ hr{
         background: #ccc;
         opacity: 1;
         width: 100px;
-        height: 5px;
+        height: 1px;
         margin: 0;
-        border-radius: 12px;
+        border-radius: 0;
         &.is-selected, &:hover{
+            height: 5px;
             background: #F44369;
             opacity: 1;
         }
