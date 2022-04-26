@@ -29,6 +29,45 @@ $(document).ready(function(){
           $('.js-flickity').flickity('resize');
         })
 
+
+        // Nex/Prev Tab
+        $('.dao-arrow__left').click(function(e){
+
+            e.preventDefault();
+            var prev_tab = $('.nav-dao >.nav-item .active').closest('li').prev('li').find('.nav-link');
+
+            if(prev_tab.length>0){
+                prev_tab.trigger('click');
+            }
+
+            var prev2_tab = $('.nav-dao >.nav-item .active').closest('li').prev('li');
+            if(prev2_tab.length > 0){
+                $('.dao-arrow__left').removeClass('disable');
+                $('.dao-arrow__right').removeClass('disable');
+            }else{
+                $('.dao-arrow__left').addClass('disable');
+
+            }
+        });
+        $('.dao-arrow__right').click(function(e){
+
+            e.preventDefault();
+            var next_tab = $('.nav-dao >.nav-item .active').closest('li').next('li').find('.nav-link');
+
+            if(next_tab.length>0){
+                next_tab.trigger('click');
+            }
+
+            var next2_tab = $('.nav-dao >.nav-item .active').closest('li').next('li');
+            if(next2_tab.length >0){
+                $('.dao-arrow__right').removeClass('disable');
+                $('.dao-arrow__left').removeClass('disable');
+            }else{
+                $('.dao-arrow__right').addClass('disable');
+
+            }
+        });
+
     }
 
     //-------------------------------------------------
@@ -118,3 +157,62 @@ $(document).ready(function(){
 });
 
 
+
+(function($, window, document){
+
+    $('[data-toggle]').on('click', function(event) {
+        event.preventDefault();
+        var target = $(this.hash);
+        target.toggle();
+    });
+
+    // Cache selectors
+    var lastId,
+        topMenu = $(".main__nav, .nav__mobile--ul"),
+        topMenuHeight = $('.header').outerHeight() + 15,
+        // All list items
+        menuItems = topMenu.find("a"),
+        // Anchors corresponding to menu items
+        scrollItems = menuItems.map(function() {
+            var item = $(this).attr("href");
+            if(item != '#') {return $(item)}
+        });
+    // Bind click handler to menu items
+    // so we can get a fancy scroll animation
+    menuItems.click(function(e) {
+        var href = $(this).attr("href"),
+            offsetTop = href === "#" ? 0 : $(href).offset().top - topMenuHeight + 1;
+        $('html, body').stop().animate({
+            scrollTop: offsetTop
+        }, 300);
+        // e.preventDefault();
+    });
+
+    // Bind to scroll
+    $(window).scroll(function() {
+
+       $('.nav__mobile').removeClass('active'); $("body").removeClass('modal-open')
+       $('.menu-mb__btn').removeClass('active');
+
+        // Get container scroll position
+        var fromTop = $(this).scrollTop() + topMenuHeight;
+
+        // Get id of current scroll item
+        var cur = scrollItems.map(function() {
+            if ($(this).offset().top < fromTop)
+                // console.log(this)
+                return this;
+        });
+        // Get the id of the current element
+        cur = cur[cur.length - 1];
+        var id = cur && cur.length ? cur[0].id : "";
+
+        if (lastId !== id) {
+            lastId = id;
+            // Set/remove active class
+            menuItems
+                .closest('li').removeClass("active")
+                .end().filter("[href='#" + id + "']").closest('li').addClass("active");
+        }
+    });
+})(jQuery, window, document);

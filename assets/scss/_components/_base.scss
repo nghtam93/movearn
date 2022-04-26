@@ -48,7 +48,9 @@ body {
     @media (max-width: 1199px){
         --container: 960px;
     }
-
+    @media (max-width: 991px){
+        --container: 720px;
+    }
 }
 
 a, a:hover {

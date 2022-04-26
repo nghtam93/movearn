@@ -83,5 +83,17 @@
 	    height: 19px;
 	    -webkit-mask-image: url(../img/icon-map-pin.svg);
 	}
+	&-arrow-right-circle:before{
+	    width: 42px;
+	    height: 42px;
+	    -webkit-mask-image: url(../img/icon-arrow-right-circle.svg);
+	    background-color: #fff;
+	}
+	&-arrow-left-circle:before{
+	    width: 42px;
+	    height: 42px;
+	    -webkit-mask-image: url(../img/icon-arrow-left-circle.svg);
+	    background-color: #fff;
+	}
 
 }
