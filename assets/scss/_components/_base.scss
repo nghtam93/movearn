@@ -101,7 +101,9 @@ hr{
     color: $color_primary;
 }
 
-
+.fade:not(.show) {
+    opacity: .5;
+}
 
 .btn{
     position: relative;

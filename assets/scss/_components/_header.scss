@@ -6,13 +6,13 @@
 	max-width:100%;
 	z-index: 10;
 	padding: 20px 0;
-	background: #fff;
 	transition: all .5s;
 	&.-fix{
 		position: fixed;
 	}
 	&.is-sticky{
 		top: 0;
+		background: #fff;
 		box-shadow: 0 0 10px #ccc;
 	}
 

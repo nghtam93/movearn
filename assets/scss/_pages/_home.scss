@@ -33,6 +33,32 @@
 			color: #000000;
 			margin-bottom: 0;
 		}
+		.el-pattern__peoplefly{
+			position: absolute;
+		    top: 15%;
+		    right: 12%;
+		    width: 36%;
+		    height: 60%;
+		    background-image: url(../img/human-flying.png);
+		    background-repeat: no-repeat;
+		    background-size: contain;
+		    pointer-events: none;
+		    z-index: 1;
+		    animation: Mousex3 5s infinite linear, lightAnimation2 3s infinite;
+		}
+		.el-pattern__planes{
+			position: absolute;
+		    top: 8%;
+		    right: 0;
+		    width: 18%;
+		    height: 24%;
+		    background-image: url(../img/planes.png);
+		    background-repeat: no-repeat;
+		    background-size: contain;
+		    pointer-events: none;
+		    z-index: 1;
+		    animation: Mousex4 6s infinite linear, lightAnimation2 3s infinite;
+		}
 		.el-pattern__coin{
 			position: absolute;
 		    bottom: -25%;
@@ -68,7 +94,7 @@
 	}
 	&-about{
 		position: relative;
-		padding: 200px 0 100px;
+		padding: 200px 0 80px;
 		.el-box{
 			padding: 90px 100px;
 			background: rgba(180, 187, 255, 0.08);
@@ -96,7 +122,7 @@
 
 	&-elements{
 		position: relative;
-		padding: 100px 0 200px;
+		padding: 80px 0;
 		&::after {
 			content: '';
 			position: absolute;
@@ -109,6 +135,7 @@
 			background-size: contain;
 			z-index: -2;
 			pointer-events: none;
+			animation: Mousex 4s linear infinite, lightAnimation2 3s linear infinite;
 		}
 		.sc-header__title{
 			font-weight: 400;
@@ -360,6 +387,7 @@
 			    background-size: contain;
 			    z-index: 1;
 			    pointer-events: none;
+			    animation: Mousex 5s linear infinite, lightAnimation2 3s linear infinite;
 			}
 			&__title{
 				font-family: 'Be Vietnam Pro';
@@ -488,6 +516,10 @@
 			box-shadow: 0px 9px 29px rgba(0, 0, 0, 0.18);
 			border-radius: 16px;
 			z-index: 1;
+			transition: all .5s;
+			&:hover{
+				transform: translateY(-10px);
+			}
 			&__title{
 				font-family: 'Be Vietnam Pro';
 				font-weight: 600;
@@ -559,6 +591,10 @@
 				}
 				&.-s4{
 					top: 123%;
+				}
+
+				&.-s2:before, &.-s4:before{
+					animation: Mousex2 2s linear infinite, lightAnimation 2s linear infinite;
 				}
 			}
 		}
@@ -899,6 +935,9 @@
 			.el-title {
 			    font-size: 80px;
 			    line-height: 90px;
+			}
+			.el-pattern__planes{
+				top: 15%;
 			}
 		}
 		&-about {
@@ -1334,9 +1373,9 @@
 			.el-road-pin.-s2 {
 			    top: -26%;
 			}
-			.flickity-button {
-			    top: calc(50% - -90px);
-			}
+			// .flickity-button {
+			//     top: calc(50% - -90px);
+			// }
 		}
 	}
 	@media (max-width: 575px){
@@ -1455,6 +1494,9 @@
 			.el-item {
 			    max-width: 280px;
 			    margin: auto;
+			}
+			.el-road {
+			    padding-top: 40%;
 			}
 		}
 
