@@ -36,11 +36,11 @@
             </ul>
           </nav>
 
-          <div class="ms-auto ms-xl-4">
+          <div class="ms-auto ms-xl-4 d-none d-sm-block">
             <a href="" class="header__btn btn btn-primary"><span>DOWNLOAD APP</span></a>
           </div>
 
-          <div class="menu-mb__btn ms-3 d-xl-none" data-id="menu__mobile">
+          <div class="menu-mb__btn ms-auto ms-sm-3 d-xl-none" data-id="menu__mobile">
             <span class="iconz-bar"></span>
             <span class="iconz-bar"></span>
             <span class="iconz-bar"></span>
@@ -60,7 +60,7 @@
           <div class="container">
               <div class="el__meta">
                 <h2 class="el-title wow fadeInUp">Move to <br>earn NFTs</h2>
-                <div class="el-excerpt mt-4 mb-5  wow fadeInRight">Make memories become treasury!</div>
+                <div class="el-excerpt mt-3 mt-sm-4 mb-3 mb-sm-5  wow fadeInRight">Make memories become treasury!</div>
                 <a href="" class="btn btn-primary mt-xl-4 -medium  wow fadeInUp">GET STARTED</a>
               </div>
           </div>
@@ -75,8 +75,8 @@
       <section id="about" class="home-about">
         <div class="container">
           <div class="el-box wow fadeInUp">
-            <header class="sc-header mb-0 d-flex align-items-center">
-              <h2 class="sc-header__title mb-0">About</h2>
+            <header class="sc-header mb-0 d-sm-flex align-items-center">
+              <h2 class="sc-header__title mb-0 text-center text-sm-left">About</h2>
               <div class="sc-header__sub mb-0"><strong>MOVEARN</strong> is a digital platform through which users can generate real-world financial and community values by gamifying personal fitness & traveling experience.</div>
             </header>
           </div>
@@ -102,7 +102,7 @@
                   <div class="row gx-5 gx-xxl-100 align-items-center">
                     <div class="el__col col-md-6  wow fadeInLeft">
                       <div class="el-item__thumb">
-                        <div class="el-item__thumb__canvas" style="background-image: url(assets/img/elements-img-01.gif);"></div>
+                        <div id="elements-canvas-01" class="el-item__thumb__canvas"></div>
                         <div class="dnfix__thumb -contain"><img src="images/home/element-img-01.png" alt=""></div>
                       </div>
                     </div>
@@ -121,7 +121,7 @@
                   <div class="row gx-5 gx-xxl-100 align-items-center">
                     <div class="el__col col-md-6 order-md-2 wow fadeInRight">
                       <div class="el-item__thumb">
-                        <div class="el-item__thumb__canvas" style="background-image: url(assets/img/elements-img-02.gif);"></div>
+                        <div id="elements-canvas-02" class="el-item__thumb__canvas"></div>
                         <div class="dnfix__thumb -contain"><img src="images/home/element-img-02.png" alt=""></div>
                       </div>
                     </div>
@@ -140,7 +140,7 @@
                   <div class="row gx-5 gx-xxl-100 align-items-center">
                     <div class="el__col col-md-6  wow fadeInLeft">
                       <div class="el-item__thumb">
-                        <div class="el-item__thumb__canvas" style="background-image: url(assets/img/elements-img-03.gif);"></div>
+                        <div id="elements-canvas-03" class="el-item__thumb__canvas"></div>
                         <div class="dnfix__thumb -contain"><img src="images/home/element-img-03.png" alt=""></div>
                       </div>
                     </div>
@@ -587,67 +587,88 @@
             <h2 class="sc-header__title wow fadeInUp">Roadmap</h2>
           </header>
           <div class="sc-content">
-            <div class="row gx-lg-5 gx-xxl-100">
-              <div class="el__col col-md-3 wow fadeInUp" >
-                <div class="el-item">
-                  <div class="el-item__meta">
-                    <h5 class="el-item__title">Q1 - 2022</h5>
-                    <div class="el-item__excerpt">
-                      <ul>
-                        <li>Complete ideation</li>
-                        <li>Team Recruitment</li>
-                        <li>Start Building The Product</li>
-                      </ul>
+            <!-- Flickity HTML init -->
+            <div class="roadmap-slider row flickity flickity-watchCSS" data-flickity='{ "autoPlay": false ,"cellAlign": "left", "pageDots": false,"prevNextButtons": true, "watchCSS": true }'>
+              <div class="el__col col-12 col-sm-6 col-md-3">
+                  <div class="el-item">
+                    <div class="el-item__meta">
+                      <h5 class="el-item__title">Q4 - 2022</h5>
+                      <div class="el-item__excerpt">
+                        <ul>
+                          <li>Complete ideation</li>
+                          <li>Team Recruitment</li>
+                          <li>Start Building The Product</li>
+                        </ul>
+                      </div>
                     </div>
                   </div>
+              </div>
+              <div class="el__col col-12 col-sm-6 col-md-3">
+                  <div class="el-item">
+                    <div class="el-item__meta">
+                      <h5 class="el-item__title">Q2 - 2022</h5>
+                      <div class="el-item__excerpt">
+                        <ul>
+                          <li>Complete ideation</li>
+                          <li>Team Recruitment</li>
+                          <li>Start Building The Product</li>
+                        </ul>
+                      </div>
+                    </div>
                 </div>
-              </div> <!-- End. col -->
-              <div class="el__col col-md-3 wow fadeInUp" data-wow-duration="1.5s">
-                <div class="el-item">
-                  <div class="el-item__meta">
-                    <h5 class="el-item__title">Q2 - 2022</h5>
-                    <div class="el-item__excerpt">
-                      <ul>
-                        <li>Complete ideation</li>
-                        <li>Team Recruitment</li>
-                        <li>Start Building The Product</li>
-                      </ul>
+              </div>
+              <div class="el__col col-12 col-sm-6 col-md-3">
+                  <div class="el-item">
+                    <div class="el-item__meta">
+                      <h5 class="el-item__title">Q3 - 2022</h5>
+                      <div class="el-item__excerpt">
+                        <ul>
+                          <li>Complete ideation</li>
+                          <li>Team Recruitment</li>
+                          <li>Start Building The Product</li>
+                        </ul>
+                      </div>
                     </div>
                   </div>
-                </div>
-              </div> <!-- End. col -->
-              <div class="el__col col-md-3 wow fadeInUp" data-wow-duration="1.8s">
-                <div class="el-item">
-                  <div class="el-item__meta">
-                    <h5 class="el-item__title">Q3 - 2022</h5>
-                    <div class="el-item__excerpt">
-                      <ul>
-                        <li>Complete ideation</li>
-                        <li>Team Recruitment</li>
-                        <li>Start Building The Product</li>
-                      </ul>
+              </div>
+              <div class="el__col col-12 col-sm-6 col-md-3">
+                  <div class="el-item">
+                    <div class="el-item__meta">
+                      <h5 class="el-item__title">Q4 - 2022</h5>
+                      <div class="el-item__excerpt">
+                        <ul>
+                          <li>Complete ideation</li>
+                          <li>Team Recruitment</li>
+                          <li>Start Building The Product</li>
+                        </ul>
+                      </div>
                     </div>
                   </div>
+              </div>
+
+            </div>
+          </div> <!-- end .sc-content -->
+        </div>
+        <div class="el-road">
+          <div class="el-road__wrap">
+            <div class="container">
+              <div class="row">
+                <div class="col-12 col-sm-6 col-md-3">
+                  <div class="el-road-pin -s1"></div>
                 </div>
-              </div> <!-- End. col -->
-              <div class="el__col col-md-3 wow fadeInUp" data-wow-duration="2.2s">
-                <div class="el-item">
-                  <div class="el-item__meta">
-                    <h5 class="el-item__title">Q4 - 2022</h5>
-                    <div class="el-item__excerpt">
-                      <ul>
-                        <li>Complete ideation</li>
-                        <li>Team Recruitment</li>
-                        <li>Start Building The Product</li>
-                      </ul>
-                    </div>
-                  </div>
+                <div class="col-12 col-sm-6 col-md-3 d-none d-sm-block">
+                  <div class="el-road-pin -s2"></div>
                 </div>
-              </div> <!-- End. col -->
+                <div class="col-12 col-sm-6 col-md-3 d-none d-md-block">
+                  <div class="el-road-pin -s3"></div>
+                </div>
+                <div class="col-12 col-sm-6 col-md-3 d-none d-md-block">
+                  <div class="el-road-pin -s4"></div>
+                </div>
+              </div>
             </div>
           </div>
         </div>
-        <div class="el-road"></div>
         <div class="el-planes"></div>
       </section>
 
@@ -661,12 +682,12 @@
           </header>
 
           <div class="container">
-            <div class="el-box">
-
-              <div class="el-box__logo">
-                <img src="images/logo-icon.svg" width="134" height="150" alt="">
+            <div class="sc-content position-relative">
+              <div class="el-box">
+                <div class="el-box__logo">
+                  <img src="images/logo-icon.svg" width="134" height="150" alt="">
+                </div>
               </div>
-
               <div class="el-texts">
                 <div class="el-item -s1">
                   <div class="el-item__circle" style="background-color:#F6C001"></div>
@@ -729,8 +750,8 @@
                   </div>
                 </div>
               </div>
-
             </div>
+
           </div>
       </section>
 
@@ -738,11 +759,11 @@
         <div class="container">
           <div class="row">
             <div class="col-lg-5 col-xxl-6">
-              <div class="footer-logo mb-4 mb-lg-0 text-center text-lg-left">
+              <div class="footer-logo mb-4 mb-lg-0 text-left text-sm-center text-lg-left">
                 <img src="images/logo-white.svg" alt="">
               </div>
             </div>
-            <div class="col-lg-7 col-xxl-6 d-flex justify-content-between">
+            <div class="col-lg-7 col-xxl-6 d-sm-flex justify-content-between">
               <div class="footer__item mb-4">
                 <h3 class="footer__title">CONTACT US</h3>
                 <p><a href="mailto:support@moveearn.io">Email: support@moveearn.io</a></p>
@@ -782,6 +803,9 @@
               <li class="menu-item"><a href="#roadmap">Roadmap</a></li>
               <li class="menu-item"><a href="#tokenomics">Tokenomics</a></li>
             </ul>
+            <div class="p-3">
+              <a href="" class="header__btn btn btn-primary"><span>DOWNLOAD APP</span></a>
+            </div>
           </div>
       </nav>
 
@@ -791,7 +815,34 @@
     <script src="assets/libs/bootstrap/js/bootstrap.bundle.min.js"></script>
     <script type="text/javascript" src="assets/libs/flickity/flickity.pkgd.min.js"></script>
     <script type="text/javascript" src="assets/js/wow.min.js"></script>
+    <script type="text/javascript" src="assets/libs/spine/spine-player.js"></script>
     <script src="assets/js/main.js"></script>
 
+    <script>
+      new spine.SpinePlayer("elements-canvas-01", {
+            jsonUrl: "assets/img/elements-canvas/91/91.json",
+            atlasUrl: "assets/img/elements-canvas/91/91.atlas",
+            alpha: true,
+            showControls: false,
+            backgroundColor: "#00000000",
+            animation: "91",
+      });
+      new spine.SpinePlayer("elements-canvas-02", {
+            jsonUrl: "assets/img/elements-canvas/92/92.json",
+            atlasUrl: "assets/img/elements-canvas/92/92.atlas",
+            alpha: true,
+            showControls: false,
+            backgroundColor: "#00000000",
+            animation: "92",
+      });
+      new spine.SpinePlayer("elements-canvas-03", {
+            jsonUrl: "assets/img/elements-canvas/93/93.json",
+            atlasUrl: "assets/img/elements-canvas/93/93.atlas",
+            alpha: true,
+            showControls: false,
+            backgroundColor: "#00000000",
+            animation: "93",
+      });
+    </script>
   </body>
 </html>

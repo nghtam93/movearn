@@ -162,6 +162,21 @@ hr{
 }
 
 /* Slider */
+
+.flickity-watchCSS:after {
+  content: 'flickity';
+  display: none; /* hide :after */
+}
+
+@media screen and ( min-width: 768px ) {
+  .flickity-watchCSS:after {
+    content: '';
+  }
+}
+
+.flickity--watchCSS:after {
+    content: '';
+  }
 .flickity:not(.-full) {
     --bs-gutter-x: 30px;
     margin-right: calc(var(--bs-gutter-x) * -.5);
@@ -200,6 +215,9 @@ hr{
     }
     @media (max-width:767px){
         bottom: -40px;
+        .dot {
+            width: 60px;
+        }
     }
     @media (max-width:575px){
         .dot {
@@ -214,6 +232,7 @@ hr{
     height: 39px;
     padding: 0;
     border-radius: 0;
+    z-index: 1;
     &:focus{
         box-shadow: none;
     }
