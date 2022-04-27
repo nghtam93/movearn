@@ -232,7 +232,6 @@
 			height: 100%;
 			z-index: 1;
 			.nav-item{
-				position: relative;
 				width: 100%;
 				height: 20%;
 				&:not(:last-child){
@@ -249,6 +248,7 @@
 				}
 			}
 			.nav-link{
+				position: relative;
 				width: 100%;
 				height: 100%;
 				padding: 24px 14px;
@@ -291,7 +291,7 @@
 		.dao-arrow {
 		    position: absolute;
 		    bottom: 30px;
-		    right: 30px;
+		    left: -120px;
 		    >*{
 		    	cursor: pointer;
 		    	&.disable{
@@ -313,23 +313,11 @@
 			height: 100%;
 			background-image: url(../img/features-bg.png);
 			background-repeat: no-repeat;
-			background-size: contain;
+			background-size: cover;
 			z-index: -1;
 			pointer-events: none;
 		}
-		&::after {
-			content: '';
-		    position: absolute;
-		    bottom: -5%;
-		    right: 5%;
-		    width: 33%;
-		    height: 29%;
-		    background-image: url(../img/features-pattern.png);
-		    background-repeat: no-repeat;
-		    background-size: contain;
-		    z-index: 1;
-		    pointer-events: none;
-		}
+
 		.sc-content{
 			position: relative;
 			z-index: 1;
@@ -357,6 +345,20 @@
 		}
 
 		.el-box{
+			&::after {
+				content: '';
+			    position: absolute;
+			    bottom: -20%;
+			    right: -6%;
+			    width: 45%;
+			    max-width: 600px;
+			   	height: 60%;
+			    background-image: url(../img/features-pattern.png);
+			    background-repeat: no-repeat;
+			    background-size: contain;
+			    z-index: 1;
+			    pointer-events: none;
+			}
 			&__title{
 				font-family: 'Be Vietnam Pro';
 				font-weight: 600;
@@ -373,7 +375,6 @@
 				font-family: 'Poppins';
 				font-weight: 700;
 				color: #000000;
-
 			}
 		}
 	}
@@ -439,6 +440,9 @@
 	&-roadmap{
 		position: relative;
 		padding: 100px 0 0;
+		.sc-header {
+		    margin-bottom: 130px;
+		}
 		.el-planes{
 			position: absolute;
 		    top: 0;
@@ -689,6 +693,13 @@
 			}
 		}
 	}
+	@media (max-width: 1599px){
+		&-features{
+			.el-box::after {
+			    bottom: -30%;
+			}
+		}
+	}
 	@media (max-width: 1499px){
 		&-roadmap{
 			.el__col:nth-child(1) .el-item {
@@ -741,10 +752,8 @@
 			}
 		}
 		&-features{
-			    padding: 80px 0 120px;
-			&::after {
-			    bottom: -10%;
-			}
+			padding: 80px 0 120px;
+
 			.el-item__title {
 			    font-size: 22px;
 			    line-height: 30px;
@@ -776,6 +785,10 @@
 			}
 			.el__col:nth-child(4) .el-item {
 			    top: 0;
+			}
+			.el-item:before {
+			    width: 60px;
+			    height: 75px;
 			}
 		}
 
@@ -833,10 +846,6 @@
 			}
 		}
 		&-features{
-			&::after {
-			    bottom: 0;
-			    height: 17%;
-			}
 			.el-box__title {
 			    font-size: 60px;
 			    line-height: 72px;
@@ -848,6 +857,10 @@
 			}
 			.el-item__excerpt {
 			    font-size: 14px;
+			}
+			.el-box::after {
+			    bottom: -40%;
+			    right: -1%;
 			}
 		}
 		&-team {
@@ -861,6 +874,9 @@
 		}
 		&-roadmap {
 		    padding: 80px 0 0;
+		    .sc-header {
+			    margin-bottom: 70px;
+			}
 		    .el-item {
 			    padding: 24px;
 			    &:before {
@@ -932,6 +948,9 @@
 			    padding-right: 40px;
 			    margin-right: 40px;
 			}
+			.el-box {
+			    padding: 40px 30px;
+			}
 		}
 		&-elements{
 			padding: 60px 0 40px;
@@ -961,7 +980,7 @@
 		&-dao{
 			.dao-arrow {
 			    bottom: 16px;
-			    right: 16px;
+			    left: -90px;
 			    i:before {
 				    width: 32px;
 				    height: 32px;
@@ -976,9 +995,7 @@
 		}
 		&-features{
 			padding: 80px 0;
-			&::after {
-			    bottom: -5%;
-			}
+
 			.el-box__title {
 			    font-size: 50px;
 			    line-height: 60px;
@@ -987,6 +1004,20 @@
 			.el-box__excerpt {
 			    font-size: 14px;
 			}
+		}
+		&-roadmap{
+			.el-item {
+			    padding: 16px;
+			    &:before {
+				    bottom: -60px;
+				    width: 40px;
+				    height: 48px;
+				}
+			    &__excerpt {
+				    font-size: 12px;
+				}
+			}
+
 		}
 		&-token{
 			.el-box {
@@ -1045,16 +1076,79 @@
 				    top: 26px;
 				}
 			}
-
 		}
 	}
 	@media (max-width: 767px){
 		&-elements {
 		    padding: 60px 0 20px;
+		    .sc-header__title {
+			    font-size: 36px;
+			    line-height: 40px;
+			    .-number {
+				    font-size: 60px;
+				    line-height: 60px;
+				}
+			}
+			.el-items .el-item__thumb {
+			    max-width: 400px;
+			    margin: auto;
+			}
 		}
 		&-team {
-		    padding: 60px 0;
+		    padding: 60px 0 80px;
 		}
+		&-token{
+			.el-box {
+			    width: 360px;
+			    height: 360px;
+			}
+		}
+		&-dao{
+			.el__col:first-child {
+			    padding: 50px 1.5rem;
+			}
+			.dao-arrow {
+			    left: 1.5rem;
+			    right: 1.5rem;
+			    z-index: 1;
+			    bottom: 50%;
+			    transform: translateY(50%);
+			    justify-content: space-between;
+			}
+			.nav-dao {
+			    width: 100%;
+			    pointer-events: none;
+			    .nav-link {
+			    	font-size: 20px;
+				    display: none;
+				    &:before{
+				    	display: none;
+				    }
+				    &.active {
+					    display: block;
+					    color: #fff;
+					    width: 100%;
+					    height: auto;
+    					padding: 20px 0;
+					    position: absolute;
+					    bottom: 0;
+					    left: 0;
+					    background: transparent;
+					}
+				}
+			}
+
+		}
+		&-features{
+			.el-box::after {
+			    bottom: auto;
+			    top: -13%;
+			}
+			.el-items {
+
+			}
+		}
+
 	}
 	@media (max-width: 575px){
 

@@ -198,6 +198,9 @@ hr{
             opacity: 1;
         }
     }
+    @media (max-width:767px){
+        bottom: -40px;
+    }
     @media (max-width:575px){
         .dot {
             width: 32px;

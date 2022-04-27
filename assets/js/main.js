@@ -143,17 +143,6 @@ $(document).ready(function(){
 
     $('.menu-mb__btn').dnmenu()
 
-    //Home page
-    var $carousel = $('.nav-roadmap')
-    $carousel.on( 'change.flickity', function( event, index ) {
-      console.log( 'Slide changed to ' + index )
-      var index2 = index + 1
-      console.log($('.nav-roadmap li:nth-child('+index2+') .nav-link').html())
-      $('.nav-roadmap li:nth-child('+index2+') .nav-link').click()
-    });
-
-    // End home page
-
 });
 
 
