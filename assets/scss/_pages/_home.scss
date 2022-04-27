@@ -356,9 +356,15 @@
 		}
 		.el-item{
 			margin-bottom: 24px;
+			&:hover{
+				.dnfix__thumb{
+					filter: grayscale(0);
+				}
+			}
 			.dnfix__thumb{
 				width: 90px;
 				padding-top: 90px;
+				filter: grayscale(100%);
 			}
 			&__thumb{
 				margin-bottom: 48px;
@@ -374,7 +380,7 @@
 		}
 
 		.el-box{
-			&::after {
+			&__pattern:before{
 				content: '';
 			    position: absolute;
 			    bottom: -20%;
@@ -389,6 +395,7 @@
 			    pointer-events: none;
 			    animation: Mousex 5s linear infinite, lightAnimation2 3s linear infinite;
 			}
+
 			&__title{
 				font-family: 'Be Vietnam Pro';
 				font-weight: 600;
@@ -793,7 +800,7 @@
 	}
 	@media (max-width: 1599px){
 		&-features{
-			.el-box::after {
+			.el-box__pattern:before{
 			    bottom: -30%;
 			}
 		}
@@ -996,7 +1003,7 @@
 			.el-item__excerpt {
 			    font-size: 14px;
 			}
-			.el-box::after {
+			.el-box__pattern:before{
 			    bottom: -40%;
 			    right: -1%;
 			}
@@ -1341,7 +1348,7 @@
 
 		}
 		&-features{
-			.el-box::after {
+			.el-box__pattern:before{
 			    bottom: auto;
 			    top: -13%;
 			}
