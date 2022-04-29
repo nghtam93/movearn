@@ -1,145 +1,285 @@
 93.png
-	size: 8192, 4096
+	size: 8192, 8192
 	filter: Linear, Linear
 	pma: true
 image/Group 93_00000
-	bounds: 2483, 17, 688, 827
+	bounds: 2491, 682, 688, 827
+	offsets: 174, 68, 1060, 950
+	rotate: 90
+image/Group 93_00071
+	bounds: 2491, 682, 688, 827
 	offsets: 174, 68, 1060, 950
 	rotate: 90
 image/Group 93_00001
-	bounds: 4959, 696, 684, 830
-	offsets: 178, 66, 1060, 950
+	bounds: 831, 690, 686, 828
+	offsets: 176, 67, 1060, 950
 	rotate: 90
 image/Group 93_00002
-	bounds: 5779, 1382, 679, 832
-	offsets: 181, 64, 1060, 950
+	bounds: 7309, 1475, 684, 830
+	offsets: 178, 66, 1060, 950
 	rotate: 90
 image/Group 93_00003
-	bounds: 829, 1399, 673, 834
-	offsets: 184, 62, 1060, 950
+	bounds: 2474, 2064, 681, 831
+	offsets: 180, 65, 1060, 950
 	rotate: 90
 image/Group 93_00004
-	bounds: 6665, 2061, 667, 835
-	offsets: 187, 61, 1060, 950
+	bounds: 4936, 2741, 679, 832
+	offsets: 181, 64, 1060, 950
 	rotate: 90
 image/Group 93_00005
-	bounds: 5000, 2067, 661, 835
-	offsets: 189, 60, 1060, 950
+	bounds: 4155, 3424, 676, 833
+	offsets: 183, 63, 1060, 950
 	rotate: 90
 image/Group 93_00006
-	bounds: 2503, 2071, 657, 834
-	offsets: 189, 60, 1060, 950
+	bounds: 2492, 3431, 673, 834
+	offsets: 184, 62, 1060, 950
 	rotate: 90
 image/Group 93_00007
-	bounds: 836, 2074, 654, 833
-	offsets: 189, 60, 1060, 950
+	bounds: 2, 3438, 669, 834
+	offsets: 186, 62, 1060, 950
 	rotate: 90
 image/Group 93_00008
-	bounds: 2, 2075, 653, 832
-	offsets: 188, 60, 1060, 950
+	bounds: 5827, 4097, 667, 835
+	offsets: 187, 61, 1060, 950
 	rotate: 90
 image/Group 93_00009
-	bounds: 1671, 2074, 654, 830
-	offsets: 187, 60, 1060, 950
+	bounds: 4163, 4102, 664, 834
+	offsets: 188, 61, 1060, 950
 	rotate: 90
 image/Group 93_00010
-	bounds: 3339, 2071, 657, 829
-	offsets: 185, 60, 1060, 950
+	bounds: 2498, 4106, 661, 835
+	offsets: 189, 60, 1060, 950
 	rotate: 90
 image/Group 93_00011
-	bounds: 4170, 2068, 660, 828
-	offsets: 184, 60, 1060, 950
+	bounds: 832, 4109, 659, 834
+	offsets: 189, 60, 1060, 950
 	rotate: 90
 image/Group 93_00012
-	bounds: 5837, 2063, 665, 826
-	offsets: 183, 61, 1060, 950
+	bounds: 5837, 4766, 657, 834
+	offsets: 189, 60, 1060, 950
 	rotate: 90
 image/Group 93_00013
-	bounds: 2, 1403, 670, 825
-	offsets: 182, 62, 1060, 950
+	bounds: 4170, 4768, 655, 833
+	offsets: 189, 60, 1060, 950
 	rotate: 90
 image/Group 93_00014
-	bounds: 1665, 1397, 675, 825
-	offsets: 181, 63, 1060, 950
+	bounds: 2503, 4769, 654, 833
+	offsets: 189, 60, 1060, 950
 	rotate: 90
 image/Group 93_00015
-	bounds: 6613, 1380, 679, 825
-	offsets: 180, 64, 1060, 950
+	bounds: 2, 4770, 653, 832
+	offsets: 189, 60, 1060, 950
 	rotate: 90
 image/Group 93_00016
-	bounds: 1656, 712, 683, 826
-	offsets: 179, 65, 1060, 950
+	bounds: 836, 4770, 653, 832
+	offsets: 188, 60, 1060, 950
 	rotate: 90
 image/Group 93_00017
-	bounds: 4129, 703, 684, 828
-	offsets: 179, 66, 1060, 950
+	bounds: 1670, 4770, 653, 831
+	offsets: 188, 60, 1060, 950
 	rotate: 90
 image/Group 93_00018
-	bounds: 2, 30, 685, 828
-	offsets: 178, 68, 1060, 950
+	bounds: 3338, 4769, 654, 830
+	offsets: 187, 60, 1060, 950
 	rotate: 90
 image/Group 93_00019
-	bounds: 832, 25, 685, 828
-	offsets: 177, 70, 1060, 950
+	bounds: 5005, 4768, 655, 830
+	offsets: 186, 60, 1060, 950
 	rotate: 90
 image/Group 93_00020
-	bounds: 5791, 694, 684, 827
-	offsets: 175, 72, 1060, 950
+	bounds: 6673, 4766, 657, 829
+	offsets: 185, 60, 1060, 950
 	rotate: 90
 image/Group 93_00021
-	bounds: 2484, 707, 683, 827
-	offsets: 173, 73, 1060, 950
+	bounds: 2, 4110, 658, 828
+	offsets: 185, 60, 1060, 950
 	rotate: 90
 image/Group 93_00022
-	bounds: 828, 717, 680, 826
-	offsets: 172, 75, 1060, 950
+	bounds: 1668, 4108, 660, 828
+	offsets: 184, 60, 1060, 950
 	rotate: 90
 image/Group 93_00023
-	bounds: 2, 722, 679, 824
-	offsets: 170, 77, 1060, 950
+	bounds: 3335, 4104, 663, 826
+	offsets: 183, 61, 1060, 950
 	rotate: 90
 image/Group 93_00024
-	bounds: 2492, 1392, 677, 823
-	offsets: 168, 78, 1060, 950
+	bounds: 4999, 4101, 665, 826
+	offsets: 183, 61, 1060, 950
 	rotate: 90
 image/Group 93_00025
-	bounds: 3317, 1392, 677, 820
-	offsets: 166, 80, 1060, 950
+	bounds: 6664, 4096, 668, 826
+	offsets: 182, 61, 1060, 950
 	rotate: 90
 image/Group 93_00026
-	bounds: 4139, 1389, 677, 819
-	offsets: 164, 81, 1060, 950
+	bounds: 838, 3437, 670, 825
+	offsets: 182, 62, 1060, 950
 	rotate: 90
 image/Group 93_00027
-	bounds: 4960, 1387, 678, 817
-	offsets: 163, 82, 1060, 950
+	bounds: 1665, 3433, 673, 825
+	offsets: 181, 62, 1060, 950
 	rotate: 90
 image/Group 93_00028
-	bounds: 7502, 1914, 680, 814
-	offsets: 162, 83, 1060, 950
+	bounds: 3328, 3427, 675, 825
+	offsets: 181, 63, 1060, 950
+	rotate: 90
 image/Group 93_00029
-	bounds: 7440, 1098, 683, 814
-	offsets: 162, 82, 1060, 950
+	bounds: 1645, 2753, 678, 825
+	offsets: 180, 63, 1060, 950
+	rotate: 90
 image/Group 93_00030
-	bounds: 3313, 704, 686, 814
-	offsets: 162, 81, 1060, 950
+	bounds: 5770, 2737, 679, 825
+	offsets: 180, 64, 1060, 950
 	rotate: 90
 image/Group 93_00031
-	bounds: 6620, 689, 689, 816
-	offsets: 163, 79, 1060, 950
+	bounds: 3307, 2061, 681, 826
+	offsets: 180, 64, 1060, 950
 	rotate: 90
 image/Group 93_00032
-	bounds: 7438, 279, 690, 817
-	offsets: 165, 77, 1060, 950
+	bounds: 4964, 2052, 683, 826
+	offsets: 179, 65, 1060, 950
+	rotate: 90
 image/Group 93_00033
-	bounds: 1662, 19, 691, 819
-	offsets: 167, 75, 1060, 950
+	bounds: 819, 1383, 684, 827
+	offsets: 179, 65, 1060, 950
 	rotate: 90
 image/Group 93_00034
-	bounds: 4140, 2, 692, 823
-	offsets: 169, 72, 1060, 950
+	bounds: 1648, 1378, 684, 828
+	offsets: 179, 66, 1060, 950
 	rotate: 90
 image/Group 93_00035
-	bounds: 3312, 12, 689, 826
+	bounds: 4955, 1365, 685, 828
+	offsets: 178, 67, 1060, 950
+	rotate: 90
+image/Group 93_00036
+	bounds: 5785, 1364, 685, 828
+	offsets: 178, 68, 1060, 950
+	rotate: 90
+image/Group 93_00037
+	bounds: 1661, 690, 686, 828
+	offsets: 177, 69, 1060, 950
+	rotate: 90
+image/Group 93_00038
+	bounds: 7306, 788, 685, 828
+	offsets: 177, 70, 1060, 950
+	rotate: 90
+image/Group 93_00039
+	bounds: 2, 696, 685, 827
+	offsets: 176, 71, 1060, 950
+	rotate: 90
+image/Group 93_00040
+	bounds: 2478, 1378, 684, 827
+	offsets: 175, 72, 1060, 950
+	rotate: 90
+image/Group 93_00041
+	bounds: 3307, 1372, 684, 828
+	offsets: 174, 72, 1060, 950
+	rotate: 90
+image/Group 93_00042
+	bounds: 5792, 2051, 683, 827
+	offsets: 173, 73, 1060, 950
+	rotate: 90
+image/Group 93_00043
+	bounds: 4135, 2058, 681, 827
+	offsets: 173, 74, 1060, 950
+	rotate: 90
+image/Group 93_00044
+	bounds: 819, 2071, 680, 826
+	offsets: 172, 75, 1060, 950
+	rotate: 90
+image/Group 93_00045
+	bounds: 1647, 2069, 680, 825
+	offsets: 171, 76, 1060, 950
+	rotate: 90
+image/Group 93_00046
+	bounds: 6597, 2736, 679, 824
+	offsets: 170, 77, 1060, 950
+	rotate: 90
+image/Group 93_00047
+	bounds: 2472, 2751, 678, 824
+	offsets: 169, 77, 1060, 950
+	rotate: 90
+image/Group 93_00048
+	bounds: 4990, 3422, 677, 823
+	offsets: 168, 78, 1060, 950
+	rotate: 90
+image/Group 93_00049
+	bounds: 5815, 3418, 677, 822
+	offsets: 167, 79, 1060, 950
+	rotate: 90
+image/Group 93_00050
+	bounds: 6639, 3417, 677, 820
+	offsets: 166, 80, 1060, 950
+	rotate: 90
+image/Group 93_00051
+	bounds: 2, 2759, 677, 820
+	offsets: 165, 80, 1060, 950
+	rotate: 90
+image/Group 93_00052
+	bounds: 824, 2758, 677, 819
+	offsets: 164, 81, 1060, 950
+	rotate: 90
+image/Group 93_00053
+	bounds: 3298, 2747, 678, 817
+	offsets: 163, 82, 1060, 950
+	rotate: 90
+image/Group 93_00054
+	bounds: 4117, 2744, 678, 817
+	offsets: 163, 82, 1060, 950
+	rotate: 90
+image/Group 93_00055
+	bounds: 2, 2077, 680, 815
+	offsets: 162, 83, 1060, 950
+	rotate: 90
+image/Group 93_00056
+	bounds: 7504, 4609, 680, 814
+	offsets: 162, 83, 1060, 950
+image/Group 93_00057
+	bounds: 7492, 3793, 681, 814
+	offsets: 162, 83, 1060, 950
+image/Group 93_00058
+	bounds: 7461, 2977, 683, 814
+	offsets: 162, 82, 1060, 950
+image/Group 93_00059
+	bounds: 7423, 2161, 684, 814
+	offsets: 162, 82, 1060, 950
+image/Group 93_00060
+	bounds: 6621, 1920, 686, 814
+	offsets: 162, 81, 1060, 950
+image/Group 93_00061
+	bounds: 2, 1388, 687, 815
+	offsets: 163, 80, 1060, 950
+	rotate: 90
+image/Group 93_00062
+	bounds: 4137, 1367, 689, 816
+	offsets: 163, 79, 1060, 950
+	rotate: 90
+image/Group 93_00063
+	bounds: 6615, 1102, 689, 816
+	offsets: 164, 78, 1060, 950
+image/Group 93_00064
+	bounds: 4148, 673, 690, 817
+	offsets: 165, 77, 1060, 950
+	rotate: 90
+image/Group 93_00065
+	bounds: 4967, 671, 691, 818
+	offsets: 166, 76, 1060, 950
+	rotate: 90
+image/Group 93_00066
+	bounds: 5787, 671, 691, 819
+	offsets: 167, 75, 1060, 950
+	rotate: 90
+image/Group 93_00067
+	bounds: 6608, 278, 692, 822
+	offsets: 168, 73, 1060, 950
+image/Group 93_00068
+	bounds: 2, 2, 692, 823
+	offsets: 169, 72, 1060, 950
+	rotate: 90
+image/Group 93_00069
+	bounds: 7302, 95, 691, 824
+	offsets: 171, 71, 1060, 950
+	rotate: 90
+image/Group 93_00070
+	bounds: 3320, 676, 689, 826
 	offsets: 173, 69, 1060, 950
 	rotate: 90

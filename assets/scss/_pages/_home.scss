@@ -59,6 +59,19 @@
 		    z-index: 1;
 		    animation: Mousex4 6s infinite linear, lightAnimation2 3s infinite;
 		}
+		.el-pattern__tiger{
+			position: absolute;
+		    bottom: -28%;
+		    right: 24%;
+		    width: 13%;
+		    height: 44%;
+		    background-image: url(../img/home-header-pattern-tiger.png);
+		    background-repeat: no-repeat;
+		    background-size: contain;
+		    pointer-events: none;
+		    z-index: 1;
+		    animation: lightAnimation2 6s infinite;
+		}
 		.el-pattern__coin{
 			position: absolute;
 		    bottom: -25%;
@@ -70,7 +83,7 @@
 		    background-size: contain;
 		    pointer-events: none;
 		    z-index: 1;
-		    animation: lightAnimation2 2s infinite;
+		    animation: lightAnimation2 3s infinite;
 		}
 		.el-pattern__pin{
 			position: absolute;
@@ -122,7 +135,7 @@
 
 	&-elements{
 		position: relative;
-		padding: 80px 0;
+		padding: 80px 0 160px;
 		&::after {
 			content: '';
 			position: absolute;
@@ -135,7 +148,7 @@
 			background-size: contain;
 			z-index: -2;
 			pointer-events: none;
-			animation: Mousex 4s linear infinite, lightAnimation2 3s linear infinite;
+			animation: Mousex 5s linear infinite, lightAnimation2 5s linear infinite;
 		}
 		.sc-header__title{
 			font-weight: 400;
@@ -332,17 +345,18 @@
 
 	&-features{
 		position: relative;
-		padding: 80px 0 150px;
+		padding: 80px 0 20px;
 		&:before{
 			content: '';
 			position: absolute;
 			top: 0;
 			left: 0;
 			width: 100%;
-			height: 100%;
+			height: 90%;
 			background-image: url(../img/features-bg.png);
 			background-repeat: no-repeat;
 			background-size: cover;
+			background-position: top;
 			z-index: -1;
 			pointer-events: none;
 		}
@@ -368,6 +382,7 @@
 			}
 			&__thumb{
 				margin-bottom: 48px;
+
 			}
 			&__title{
 				font-family: 'Be Vietnam Pro';
@@ -380,22 +395,33 @@
 		}
 
 		.el-box{
-			&__pattern:before{
-				content: '';
-			    position: absolute;
-			    bottom: -20%;
-			    right: -6%;
-			    width: 45%;
-			    max-width: 600px;
-			   	height: 60%;
-			    background-image: url(../img/features-pattern.png);
-			    background-repeat: no-repeat;
-			    background-size: contain;
-			    z-index: 1;
-			    pointer-events: none;
-			    animation: Mousex 5s linear infinite, lightAnimation2 3s linear infinite;
+			&__pattern{
+				width: 68%;
+				animation: Mousex 6s linear infinite, lightAnimation2 4s linear infinite;
+				.dnfix__thumb{
+					padding-top: 78%;
+				}
 			}
-
+			// &__pattern:before {
+			//     content: '';
+			//     position: absolute;
+			//     bottom: -22%;
+			//     right: 0;
+			//     width: 30%;
+			//     max-width: 600px;
+			//     height: 55%;
+			//     background-image: url(../img/features-pattern.png);
+			//     background-repeat: no-repeat;
+			//     background-size: contain;
+			//     z-index: 1;
+			//     pointer-events: none;
+			//     animation: Mousex 5s linear infinite, lightAnimation2 3s linear infinite;
+			// }
+			&__thumb {
+			    width: 110%;
+			    position: relative;
+			    left: -10%;
+			}
 			&__title{
 				font-family: 'Be Vietnam Pro';
 				font-weight: 600;
@@ -559,8 +585,6 @@
 			background-image: url(../img/roadmap-road.svg);
 			background-repeat: no-repeat;
 			background-size:cover;
-			// pointer-events: none;
-			// z-index: -1;
 			&__wrap{
 				position: absolute;
 				top: 0;
@@ -602,6 +626,35 @@
 
 				&.-s2:before, &.-s4:before{
 					animation: Mousex2 2s linear infinite, lightAnimation 2s linear infinite;
+				}
+			}
+
+			&__partern{
+				&:before{
+					content: '';
+				    position: absolute;
+				    top: -42%;
+				    left: 0;
+				    width: 12%;
+				    height: 65%;
+				    background-image: url(../img/road-tiger-left.png);
+				    background-repeat: no-repeat;
+				    background-size: contain;
+				    pointer-events: none;
+				    animation: Mousex 6s linear infinite, lightAnimation 6s linear infinite;
+				}
+				&:after{
+					content: '';
+					position: absolute;
+					top: -34%;
+					right: 0;
+					width: 12%;
+				    height: 70%;
+					background-image: url(../img/road-tiger-right.png);
+					background-repeat: no-repeat;
+					background-size: contain;
+					pointer-events: none;
+					animation: Mousex2 6s linear infinite, lightAnimation 6s linear infinite;
 				}
 			}
 		}
@@ -800,9 +853,9 @@
 	}
 	@media (max-width: 1599px){
 		&-features{
-			.el-box__pattern:before{
-			    bottom: -30%;
-			}
+			// .el-box__pattern:before{
+			//     bottom: -30%;
+			// }
 		}
 		&-roadmap{
 			.el__col:nth-child(3) .el-item {
@@ -876,18 +929,22 @@
 			}
 		}
 		&-features{
-			padding: 80px 0 120px;
+			padding: 80px 0 20px;
 
 			.el-item__title {
 			    font-size: 22px;
 			    line-height: 30px;
 			}
+			.el-item__excerpt {
+			    font-size: 16px;
+			}
 			.el-box__title {
 			    font-size: 80px;
 			    line-height: 86px;
 			}
-			.el-item__excerpt {
-			    font-size: 16px;
+			.el-box__thumb {
+			    width: 100%;
+			    left: 0%;
 			}
 
 		}
@@ -910,8 +967,6 @@
 			.el__col:nth-child(4) .el-item {
 			    top: 8%;
 			}
-
-
 			.el-road{
 				&-pin{
 					top: -17%;
@@ -955,7 +1010,7 @@
 			}
 		}
 		&-elements{
-			padding: 80px 0;
+			// padding: 80px 0;
 			.sc-header__title {
 			    font-size: 60px;
 			    line-height: 64px;
@@ -1118,7 +1173,7 @@
 			}
 		}
 		&-elements{
-			padding: 60px 0 40px;
+			padding: 60px 0 100px;
 			.sc-header__title {
 			    font-size: 44px;
 			    line-height: 50px;
@@ -1159,7 +1214,7 @@
 			}
 		}
 		&-features{
-			padding: 60px 0;
+			padding: 60px 0 20px;
 
 			.el-box__title {
 			    font-size: 50px;
@@ -1280,7 +1335,7 @@
 	}
 	@media (max-width: 767px){
 		&-elements {
-		    padding: 60px 0 20px;
+		    padding: 60px 0 80px;
 		    .sc-header__title {
 			    font-size: 36px;
 			    line-height: 40px;
@@ -1348,12 +1403,15 @@
 
 		}
 		&-features{
-			.el-box__pattern:before{
-			    bottom: auto;
-			    top: -13%;
-			}
-			.el-items {
-
+			// .el-box__pattern:before{
+			//     bottom: auto;
+			//     top: -13%;
+			// }
+			.el-box__pattern {
+			    width: 42%;
+			    position: absolute;
+			    top: -15%;
+			    right: 0;
 			}
 		}
 
@@ -1458,7 +1516,7 @@
 			}
 		}
 		&-token{
-			padding: 80px 0 40px;
+			padding: 80px 0 100px;
 			.sc-content{
 				width: 100%;
 				height: 100%;
