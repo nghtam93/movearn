@@ -148,7 +148,7 @@
 			background-size: contain;
 			z-index: -2;
 			pointer-events: none;
-			animation: Mousex 5s linear infinite, lightAnimation2 5s linear infinite;
+			animation: Mousex 5s linear infinite;
 		}
 		.sc-header__title{
 			font-weight: 400;
@@ -352,7 +352,7 @@
 			top: 0;
 			left: 0;
 			width: 100%;
-			height: 90%;
+			height: 100%;
 			background-image: url(../img/features-bg.png);
 			background-repeat: no-repeat;
 			background-size: cover;
@@ -418,7 +418,7 @@
 			//     animation: Mousex 5s linear infinite, lightAnimation2 3s linear infinite;
 			// }
 			&__thumb {
-			    width: 110%;
+			    width: 120%;
 			    position: relative;
 			    left: -10%;
 			}
@@ -591,6 +591,17 @@
 				left: 0;
 				width: 100%;
 				height: 100%;
+				&:after {
+				    content: '';
+				    position: absolute;
+				    bottom: -23%;
+				    left: 0;
+				    width: 100%;
+				    height: 45%;
+				    pointer-events: none;
+				    z-index: 2;
+				        background: linear-gradient(179.81deg, rgba(48,76,155,0) 31.51%, #eef1fd 49.31%, rgba(238, 241, 253, .4) 77.28%, rgba(46,20,64,0) 99.83%);
+				}
 			}
 			&-pin{
 				position: relative;
@@ -1496,7 +1507,7 @@
 			}
 		}
 		&-features{
-    		padding: 60px 0 40px;
+    		padding: 60px 0 20px;
 
 			.el-box__title {
 			    font-size: 44px;
