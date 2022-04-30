@@ -1475,17 +1475,13 @@
 		}
 		&-elements{
 			&::after {
-			    content: '';
-			    position: absolute;
-			    top: 62%;
-			    left: 0;
-			    width: 100%;
+				top: 66%;
+			    width: 30%;
 			    height: 20%;
-			    background-image: url(../img/elements-bg-01.png);
-			    background-repeat: no-repeat;
-			    background-size: contain;
-			    z-index: -2;
-			    pointer-events: none;
+			    background-image: url(../img/elements-bg-01-mb.png);
+			    left: auto;
+			    right: 0;
+			    z-index: 2;
 			}
 		}
 		&-about{
