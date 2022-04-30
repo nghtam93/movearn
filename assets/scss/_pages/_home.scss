@@ -136,6 +136,10 @@
 	&-elements{
 		position: relative;
 		padding: 80px 0 160px;
+		.sc-wrap{
+			position: relative;
+			z-index: 1;
+		}
 		&::after {
 			content: '';
 			position: absolute;
