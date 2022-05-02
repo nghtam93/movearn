@@ -231,11 +231,9 @@
 		.slider-item{
 			overflow: hidden;
 			padding: 0;
-			// background: #fdfafa;
-			// backdrop-filter: blur(60px);
-			// -webkit-backdrop-filter: blur(60px);
+			transform: translateZ(0);
 			border-radius: 48px;
-			border: 2px solid #D3D2FF;
+			// border: 2px solid #D3D2FF;
 			.cloudimage-360-icons-container {
 			    right: 20px;
 			    top: 20px;
