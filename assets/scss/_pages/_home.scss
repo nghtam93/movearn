@@ -33,6 +33,9 @@
 			color: #000000;
 			margin-bottom: 0;
 		}
+		.el-excerpt{
+
+		}
 		.el-pattern__peoplefly{
 			position: absolute;
 		    top: 15%;
@@ -1177,8 +1180,6 @@
 				    bottom: -22%;
 				}
 			}
-
-
 		}
 		&-about{
 			padding: 200px 0 40px;
@@ -1473,6 +1474,20 @@
 			    bottom: -25%;
 			    height: 50%;
 			}
+
+			.el-pattern__pin {
+			    width: 36px;
+			    height: 80px;
+			    bottom: -3%;
+    			left: 23%;
+			}
+			.el-pattern__tiger {
+			    bottom: 0;
+			    right: 24%;
+			    width: 26%;
+    			height: 26%;
+			}
+
 		}
 		&-elements{
 			&::after {
