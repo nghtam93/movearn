@@ -97,6 +97,9 @@ hr{
 .ratio > * {
     object-fit: contain;
 }
+.ratio.-cover > * {
+    object-fit: cover;
+}
 .-color-primary{
     color: $color_primary;
 }
@@ -428,14 +431,18 @@ hr{
     .container {
         max-width: 1124px;
     }
-
+    .container-900{
+        max-width: 924px;
+    }
 }
 
 @media (min-width: 1300px){
     .container{
         max-width: 1224px;
     }
-
+    .container-900{
+        max-width: 924px;
+    }
 }
 @media (min-width: 1400px){
     .gx-xxl-100{
@@ -449,6 +456,9 @@ hr{
 @media (min-width: 1600px){
     .container{
         max-width: 1400px;
+    }
+    .container-900{
+        max-width: 924px;
     }
     .container-xxl-1300{
         max-width: 1324px;

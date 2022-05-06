@@ -122,6 +122,45 @@
 }
 
 
+//paging-navigation
+.paging-navigation{
+    display: flex;
+    justify-content: center;
+    margin-top: 60px;
+    font-weight: bold;
+    font-size: 16px;
+    line-height: 40px;
+    color: #05D9A3;
+    .pagination{
+        .page-numbers{
+            width: 40px;
+            height: 46px;
+            margin: 0 4px;
+            transition: all .5s;
+            font-weight: 700;
+            font-size: 16px;
+            line-height: 46px;
+            text-align: center;
+            color: #000000;
+            border-radius: 5px;
+            &.current, &:hover{
+                background: linear-gradient(85.15deg, #F44369 0%, #3D2DFF 152.74%);
+                color: #fff;
+                opacity: 1;
+            }
+
+            &.prev, &.next{
+                opacity: 1;
+                background: transparent;
+
+            }
+        }
+
+    }
+}
+
+
+
 @media (max-width: 1199px){
 
 }
@@ -132,5 +171,15 @@
     }
 }
 @media (max-width: 575px){
+
+    .paging-navigation {
+        margin-top: 20px;
+        .pagination .page-numbers {
+            width: 32px;
+            height: 36px;
+            font-size: 14px;
+            line-height: 36px;
+        }
+    }
 
 }

@@ -83,17 +83,40 @@
 	    height: 19px;
 	    -webkit-mask-image: url(../img/icon-map-pin.svg);
 	}
+
+	&-arrow-left:before{
+	    width: 12px;
+	    height: 12px;
+	    -webkit-mask-image: url(../img/icon-arrow-left.svg);
+	    background-color: #868A96;
+	}
+	&-arrow-right:before{
+	    width: 12px;
+	    height: 12px;
+	    -webkit-mask-image: url(../img/icon-arrow-right.svg);
+	    background-color: #868A96;
+	}
+
+
+	&-arrow-left-circle:before{
+	    width: 42px;
+	    height: 42px;
+	    -webkit-mask-image: url(../img/icon-arrow-left-circle.svg);
+	    background-color: #fff;
+	}
 	&-arrow-right-circle:before{
 	    width: 42px;
 	    height: 42px;
 	    -webkit-mask-image: url(../img/icon-arrow-right-circle.svg);
 	    background-color: #fff;
 	}
-	&-arrow-left-circle:before{
-	    width: 42px;
-	    height: 42px;
-	    -webkit-mask-image: url(../img/icon-arrow-left-circle.svg);
-	    background-color: #fff;
+
+	&-clock:before{
+		top: 1px;
+	    width: 16px;
+	    height: 16px;
+	    -webkit-mask-image: url(../img/icon-clock.svg);
+	    background-color: #868A96;
 	}
 
 }

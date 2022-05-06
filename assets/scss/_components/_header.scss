@@ -7,6 +7,9 @@
 	z-index: 10;
 	padding: 20px 0;
 	transition: all .5s;
+	&.-no-bg{
+		background: transparent;
+	}
 	&.-fix{
 		position: fixed;
 	}
