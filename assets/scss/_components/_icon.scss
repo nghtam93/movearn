@@ -119,4 +119,20 @@
 	    background-color: #868A96;
 	}
 
+	&-logo:before{
+		top: 1px;
+	    width: 21px;
+	    height: 24px;
+	    -webkit-mask-image: url(../img/icon-logo.svg);
+	    background-color: #fff;
+	}
+
+	&-shoe:before{
+		top: 1px;
+	    width: 24px;
+	    height: 24px;
+	    -webkit-mask-image: url(../img/icon-shoe.svg);
+	    background-color: #fff;
+	}
+
 }

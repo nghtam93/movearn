@@ -1,37 +1,6 @@
 body.home{
 	.footer{
-		&:before{
-			content: '';
-		    position: absolute;
-		    bottom: 110px;
-		    left: 0;
-		    width: 16%;
-		    height: 280%;
-		    max-height: 470px;
-		    background-image: url(../img/footer-tiger-left.png);
-		    background-repeat: no-repeat;
-		    background-size: contain;
-		    background-position: bottom left;
-		    pointer-events: none;
-		    animation: Mousex 6s linear infinite, lightAnimation 6s linear infinite;
-		    pointer-events: none;
-		}
-		&:after{
-			content: '';
-			position: absolute;
-			bottom: 110px;
-			right: 0;
-			width: 16%;
-		    height: 280%;
-		    max-height: 470px;
-			background-image: url(../img/footer-tiger-right.png);
-			background-repeat: no-repeat;
-			background-size: contain;
-			background-position: bottom right;
-			pointer-events: none;
-			animation: Mousex2 6s linear infinite, lightAnimation 6s linear infinite;
-			pointer-events: none;
-		}
+
 		@media (max-width: 991px){
 			&:before{
 				top: -130px;
@@ -91,6 +60,7 @@ body.home{
 		line-height: 21px;
 		color: #FFFFFF;
 		margin-bottom: 4px;
+		text-transform: uppercase;
 	}
 
 	&__socical{

@@ -12,6 +12,8 @@
 	}
 	&.-fix{
 		position: fixed;
+		// background: -webkit-linear-gradient(180deg,rgba(0,0,0,0.7),rgba(0,0,0,0) 90%,rgba(0,0,0,0));
+  //   	background: linear-gradient(180deg,rgba(0,0,0,0.7),rgba(0,0,0,0) 90%,rgba(0,0,0,0));
 	}
 	&.is-sticky{
 		top: 0;

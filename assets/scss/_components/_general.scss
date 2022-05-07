@@ -43,6 +43,10 @@
             font-size: 26px;
             line-height: 42px;
         }
+        &__marquee {
+            font-size: 200px;
+            line-height: 200px;
+        }
     }
     @media (max-width:1199px){
         &__title {
@@ -56,10 +60,7 @@
             font-size: 20px;
             line-height: 32px;
         }
-        &__marquee {
-            font-size: 200px;
-            line-height: 200px;
-        }
+
     }
     @media (max-width:991px){
         &__title {

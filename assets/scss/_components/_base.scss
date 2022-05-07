@@ -94,6 +94,9 @@ hr{
     background-color: #512B35;
     opacity: 1;
 }
+.color-pink{
+    color : #F44369!important;
+}
 .ratio > * {
     object-fit: contain;
 }
@@ -131,8 +134,9 @@ hr{
         -webkit-filter:brightness(1.25);filter:brightness(1.25)
     }
     &.-medium{
+        min-height: 51px;
         font-size: 18px;
-        padding: 14px 20px
+        padding: 11px 20px;
     }
     &-primary{
         text-transform: initial;
@@ -141,6 +145,10 @@ hr{
             background-color: #6a822a;
             border-color: #6a822a;
         }
+    }
+    &.-has-icon{
+        display: inline-flex;
+        align-items: center;
     }
 
     @media (max-width:991px){
@@ -179,9 +187,7 @@ hr{
   }
 }
 
-.flickity--watchCSS:after {
-    content: '';
-  }
+
 .flickity:not(.-full) {
     --bs-gutter-x: 30px;
     margin-right: calc(var(--bs-gutter-x) * -.5);
@@ -379,6 +385,9 @@ hr{
 .text__truncate.-n4{-webkit-line-clamp:4;}
 
 
+/**/
+
+
 @media (max-width: 1399px){
     .flickity__slider__arrow {
         padding: 0 50px;
@@ -433,6 +442,13 @@ hr{
     }
     .container-900{
         max-width: 924px;
+    }
+    .row-cols-xl-8 > * {
+        flex: 0 0 auto;
+        width: 12.5%;
+    }
+    .col-xl-8col{
+        width: 12.5%;
     }
 }
 

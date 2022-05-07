@@ -143,6 +143,36 @@ $(document).ready(function(){
 
     $('.menu-mb__btn').dnmenu()
 
+
+    if (window.matchMedia('(max-width: 1199px)').matches)
+    {
+      function setSliderHeightToMax(slider) {
+            slider.cells.forEach(cell => cell.element.style.height = '');
+
+            let heights = slider.cells.map(cell => cell.element.offsetHeight),
+                max = Math.max.apply(Math, heights);
+
+            slider.cells.forEach(cell => cell.element.style.height = max + 'px');
+        }
+        var slider = document.querySelector('.roadmap-slider');
+        var flkty = new Flickity( slider, {
+            on: {
+                ready: function() {
+                    setTimeout(function(){ setSliderHeightToMax(this); }, 500);
+                }
+            }
+        });
+
+        window.addEventListener('resize', function(){
+            setSliderHeightToMax(flkty);
+        });
+
+        setTimeout(function(){ setSliderHeightToMax(flkty); }, 500);
+    }
+
+
+
+
 });
 
 
