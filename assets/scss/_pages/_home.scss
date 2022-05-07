@@ -428,9 +428,27 @@
 				.dnfix__thumb{
 					filter: grayscale(0);
 				}
+
+			}
+			&.active{
 				background: #FFFFFF;
 				box-shadow: 0px 11px 22px rgba(103, 120, 181, 0.25);
 				border-radius: 24px;
+			}
+			&__label{
+				display: inline-flex;
+    			align-items: center;
+				background: #F44369;
+				border-radius: 80px;
+				padding: 4px 8px;
+
+				font-family: 'Be Vietnam Pro';
+				font-weight: 700;
+				font-size: 12px;
+				line-height: normal;
+				text-transform: capitalize;
+				color: #FFFFFF;
+
 			}
 			.dnfix__thumb{
 				width: 90px;
@@ -442,6 +460,8 @@
 
 			}
 			&__title{
+				display: flex;
+    			align-items: center;
 				font-family: 'Be Vietnam Pro';
 				font-weight: 600;
 				font-size: 24px;
@@ -746,7 +766,7 @@
 					background-size: contain;
 					z-index: 1;
 					pointer-events: none;
-					animation: Mousex 2s linear infinite, lightAnimation 2s linear infinite;
+					animation: Mousex 5s linear infinite, lightAnimation 5s linear infinite;
 				}
 
 				&.-s2{
@@ -773,7 +793,7 @@
 
 
 				&.-s2:before, &.-s4:before{
-					animation: Mousex2 2s linear infinite, lightAnimation 2s linear infinite;
+					animation: Mousex2 5s linear infinite, lightAnimation 5s linear infinite;
 				}
 			}
 

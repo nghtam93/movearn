@@ -134,6 +134,10 @@ hr{
         -webkit-filter:brightness(1.25);filter:brightness(1.25)
     }
     &.-medium{
+        display: inline-flex;
+        align-items: center;
+        justify-content: center;
+
         min-height: 51px;
         font-size: 18px;
         padding: 11px 20px;
@@ -146,10 +150,7 @@ hr{
             border-color: #6a822a;
         }
     }
-    &.-has-icon{
-        display: inline-flex;
-        align-items: center;
-    }
+
 
     @media (max-width:991px){
 
