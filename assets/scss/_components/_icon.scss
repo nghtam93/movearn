@@ -141,6 +141,12 @@
 	    -webkit-mask-image: url(../img/icon-star.svg);
 	    background-color: #fff;
 	}
+	&-discord:before{
+		top: 1px;
+	    width: 17px;
+	    height: 16px;
+	    -webkit-mask-image: url(../img/icon-discord.png);
+	}
 
 
 }
