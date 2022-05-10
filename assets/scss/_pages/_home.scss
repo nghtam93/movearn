@@ -1764,13 +1764,9 @@
 			}
 			.roadmap-slider{
 				--bs-gutter-x: 30px;
-			    margin-right: calc(var(--bs-gutter-x) * -.5);
-			    margin-left: calc(var(--bs-gutter-x) * -.5);
 			    margin-bottom: -80px;
 			    .el__col{
-			    	padding: 30px 0 120px;
-			        padding-right: calc(var(--bs-gutter-x) * .5);
-			        padding-left: calc(var(--bs-gutter-x) * .5);
+			    	padding: 30px 16px 120px;
 			    }
 			    .el-item {
 				    box-shadow: 0px 9px 14px rgba(0, 0, 0, .18);
@@ -1781,6 +1777,16 @@
 			}
 			.el-road-pin.-s2 {
 			    top: 30%;
+			}
+			.flickity-prev-next-button {
+			    top: 30%;
+			    transform: scale(1);
+			   	&.previous {
+				    left: -25px;
+				}
+				&.next {
+				    right: -25px;
+				}
 			}
 
 		}
@@ -1928,7 +1934,13 @@
 				display: flex;
 				align-items: center;
 				flex-wrap: wrap;
+				justify-content: center;
+				.flex-grow-1 {
+				    max-width: 88px;
+				    margin: auto;
+				}
 			}
+
 			.el-item {
 				position: relative;
 				width: 33.33333%;
@@ -1944,6 +1956,13 @@
 			    .-number {
 				    font-size: 20px;
 				    line-height: 28px;
+				}
+
+				&.-s2, &.-s5, &.-s8{
+					width: 26%;
+				}
+				&.-s3, &.-s6, &.-s9{
+					width: 26%;
 				}
 			}
 		}
@@ -1963,6 +1982,15 @@
 			.el-item__excerpt {
 			    font-size: 14px;
 			}
+			.flickity-prev-next-button {
+			   	&.previous {
+				    left: 0;
+				}
+				&.next {
+				    right: 0;
+				}
+			}
+
 		}
 		&-team {
 		    padding: 40px 0 80px;
