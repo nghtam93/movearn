@@ -195,7 +195,6 @@
 		padding: 80px 0 160px;
 		.sc-wrap{
 			position: relative;
-			z-index: 1;
 		}
 		&::after {
 			content: '';
@@ -251,6 +250,10 @@
 					    background-size: contain;
 					    z-index: -1;
 					    pointer-events: none;
+					}
+					video{
+						border-radius: 50%;
+						transform: translateZ(0)
 					}
 				}
 				.dnfix__thumb{
@@ -323,26 +326,32 @@
 		.sc-header{
 
 		}
+		.ratio{
+			&:before{
+				min-height: 350px;
+    			padding-top: 56%;
+			}
+		}
 		.el__col{
 			position: relative;
-			&:first-child{
-				padding-left: var(--container-half-space);
-				padding-right: 80px;
-				background: linear-gradient(85.15deg, #F44369 0%, #3D2DFF 152.74%);
-				&:before{
-					content: '';
-					position: absolute;
-					top: 0;
-					left: 0;
-					width: 30%;
-					height: 100%;
-					background-image: url(../img/dao-logo.png);
-					background-repeat: no-repeat;
-					background-size: contain;
-					z-index: -1;
-					pointer-events: none;
-				}
-			}
+			// &:first-child{
+			// 	padding-left: var(--container-half-space);
+			// 	padding-right: 80px;
+			// 	background: linear-gradient(85.15deg, #F44369 0%, #3D2DFF 152.74%);
+			// 	&:before{
+			// 		content: '';
+			// 		position: absolute;
+			// 		top: 0;
+			// 		left: 0;
+			// 		width: 30%;
+			// 		height: 100%;
+			// 		background-image: url(../img/dao-logo.png);
+			// 		background-repeat: no-repeat;
+			// 		background-size: contain;
+			// 		z-index: -1;
+			// 		pointer-events: none;
+			// 	}
+			// }
 		}
 		.nav-dao{
 			position: absolute;
@@ -1113,7 +1122,9 @@
 		}
 	}
 	@media (max-width: 1599px){
-
+		&-elements::after {
+		    top: 45%;
+		}
 	}
 	@media (max-width: 1499px){
 		&-roadmap{
@@ -1702,9 +1713,10 @@
 		    font-size: 20px;
 		}
 		&-dao{
-			.el__col:first-child {
-			    padding: 50px 1.5rem;
-			}
+			// .el__col:first-child {
+			//     padding: 50px 1.5rem;
+			// }
+
 			.dao-arrow {
 			    left: 1.5rem;
 			    right: 1.5rem;
@@ -1959,5 +1971,11 @@
 		    font-size: 34px;
 		}
 
+	}
+
+	@media (max-width: 400px){
+		&-elements .el-items .el-item.-maybay .el-item__thumb{
+		    margin-left: -50px;
+		}
 	}
 }
