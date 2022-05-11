@@ -715,17 +715,17 @@
 			}
 			&:nth-child(3){
 				.el-item{
-					bottom: 5%;
+					bottom: 30%;
 				}
 			}
 			&:nth-child(4){
 				.el-item{
-					bottom: 16%;
+					bottom: 33%;
 				}
 			}
 			&:nth-child(5){
 				.el-item{
-				    bottom: -40%;
+				    bottom: -20%;
 				}
 			}
 			&:nth-child(6){
@@ -735,7 +735,7 @@
 			}
 			&:nth-child(7){
 				.el-item{
-					bottom: -160%;
+					bottom: -175%;
 				}
 			}
 			&:nth-child(8){
@@ -798,8 +798,8 @@
 			}
 			&-pin{
 				position: relative;
-				top: 20%;
-				height: 86px;
+				top: 60%;
+				height: 60px;
 
 				&:before{
 					content: '';
@@ -808,8 +808,8 @@
 					left: 0;
 					right: 0;
 					margin: auto;
-					width: 47%;
-					height: 86px;
+					width: 45px;
+					height: 60px;
 					background-image: url(../img/icon-map-pin.png);
 					background-repeat: no-repeat;
 					background-size: contain;
@@ -819,25 +819,25 @@
 				}
 
 				&.-s2{
-					top: 50%;
+					top: 80%;
 				}
 				&.-s3{
-					top: 0;
+					top: -30%;
 				}
 				&.-s4{
-					top: 0;
+					top: -27%;
 				}
 				&.-s5{
 					top: 50%;
 				}
 				&.-s6{
-					top: 170%;
+					top: 253%;
 				}
 				&.-s7{
-					top: 195%;
+					top: 315%;
 				}
 				&.-s8{
-					top: 100%;
+					top: 164%;
 				}
 
 
@@ -1093,6 +1093,9 @@
 
 		&-roadmap{
 			.el__col{
+				&:nth-child(1) .el-item {
+				    bottom: 20%;
+				}
 				&:nth-child(6){
 					.el-item{
 					    bottom: -118%;
@@ -1105,26 +1108,80 @@
 				}
 				&:nth-child(8){
 					.el-item{
-						bottom: -45%;
+						bottom: -25%;
 					}
 				}
 			}
 
-			.el-road-pin.-s6 {
-			    top: 145%;
+			.el-road-pin {
+				top: -17%;
+				&.-s2 {
+				    top: 72%;
+				}
+				&.-s6 {
+				    top: 230%;
+				}
+				&.-s7 {
+				    top: 200%;
+				}
+				&.-s8 {
+				    top: 55%;
+				}
 			}
-			.el-road-pin.-s7 {
-			    top: 140%;
-			}
-			.el-road-pin.-s8 {
-			    top: 55%;
-			}
+
 		}
 	}
 	@media (max-width: 1599px){
 		&-elements::after {
 		    top: 45%;
 		}
+		&-roadmap{
+			.el__col{
+				&:nth-child(1) .el-item {
+				    bottom: 0;
+				}
+				&:nth-child(2) .el-item {
+				    bottom: -15%;
+				}
+				&:nth-child(6) .el-item {
+				    bottom: -100%;
+				}
+				&:nth-child(7) .el-item {
+				    bottom: -125%;
+				}
+				&:nth-child(8) .el-item {
+				    bottom: -44%;
+				}
+			}
+
+			.el-road-pin {
+				top: 20%;
+				&.-s2 {
+				    top: 60%;
+				}
+				&.-s3 {
+				    top: -38%;
+				}
+				&.-s4 {
+				    top: -36%;
+				}
+				&.-s5 {
+				    top: 41%;
+				}
+				&.-s6 {
+				    top: 200%;
+				}
+				&.-s7 {
+				    top: 229%;
+				}
+				&.-s8 {
+				    top: 92%;
+				}
+
+			}
+
+		}
+
 	}
 	@media (max-width: 1499px){
 		&-roadmap{
@@ -1213,43 +1270,49 @@
 			}
 
 			.el__col:nth-child(1) .el-item {
-			    bottom: 13%;
+			    bottom: 38%;
 			}
 			.el__col:nth-child(2) .el-item {
-			    bottom: -20%;
+			    bottom: 0;
 			}
 			.el__col:nth-child(4) .el-item {
-			    bottom: 22%;
+			    bottom: 50%;
+			}
+			.el__col:nth-child(5) .el-item {
+			    bottom: 2%;
 			}
 			.el__col:nth-child(6) .el-item {
-			    bottom: -108%;
+			    bottom: -65%;
 			}
 			.el__col:nth-child(7) .el-item {
 			    bottom: -80%;
 			}
 			.el__col:nth-child(8) .el-item {
-			    bottom: -10%;
+			    bottom: 10%;
 			}
 			.el-road{
 				&-pin{
-					top: -10%;
+					top: -44%;
 					&:before{
 						width: 34%;
 					}
 					&.-s2 {
-					    top: 60%;
+					    top: 40%;
 					}
 					&.-s4 {
-					    top: -10%;
+					    top: -50%;
+					}
+					&.-s5 {
+					    top: 17%;
 					}
 					&.-s6 {
-					    top: 148%;
+					    top: 175%;
 					}
 					&.-s7 {
-					    top: 110%;
+					    top: 127%;
 					}
 					&.-s8 {
-					    top: 20%;
+					    top: 0;
 					}
 				}
 			}
@@ -1384,25 +1447,27 @@
 			    font-size: 14px;
 			}
 			.el__col{
-				padding: 10px 10px;
+				padding: 20px 10px;
 				min-height: 100%;
 			}
-
+			.roadmap-slider{
+				margin-bottom: 50px;
+			}
 			.el-road{
 				&-pin{
-					top: -38%;
+					top: 1%;
 					&:before {
 					    width: 50px;
 					    height: 60px;
 					}
 					&.-s2{
-						top: -38%;
+						top: -49%;
 					}
 					&.-s3{
-						top: 33%;
+						    top: 53%;
 					}
 					&.-s4{
-						top: 5%;
+						top: 96%;
 					}
 				}
 			}
@@ -1430,10 +1495,14 @@
 	}
 	@media (max-width: 1099px){
 		&-roadmap{
-			.el__col:nth-child(4) .el-item {
-			    top: 16%;
+			.el-road-pin {
+			    top: -13%;
+			}
+			.el-road-pin.-s4 {
+			    top: 52%;
 			}
 		}
+
 	}
 	@media (max-width: 991px){
 		&-header{
@@ -1538,19 +1607,18 @@
 			}
 			.el-road{
 				&-pin{
-					top: -43%;
+
 					&:before {
-					    width: 50px;
-					    height: 60px;
+
 					}
 					&.-s2{
 						top: -59%;
 					}
 					&.-s3{
-						top: 4%;
+						top: 18%;
 					}
 					&.-s4{
-						top: 3%;
+						top: 86%;
 					}
 				}
 			}
@@ -1646,6 +1714,19 @@
 		    padding: 60px 0;
 		}
 	}
+
+	@media (max-width: 899px){
+		&-roadmap{
+			.el-road-pin {
+			    top: -13%;
+			}
+			.el-road-pin.-s4 {
+			    top: 52%;
+			}
+		}
+
+	}
+
 	@media (max-width: 767px){
 		&-header{
 			.el-pattern__pin {
@@ -1776,7 +1857,7 @@
 			    top: -62%;
 			}
 			.el-road-pin.-s2 {
-			    top: 30%;
+			    top: 65%;
 			}
 			.flickity-prev-next-button {
 			    top: 30%;
@@ -1975,6 +2056,9 @@
 			}
 			.el-road {
 			    padding-top: 40%;
+			    &-pin {
+				    top: -12%;
+				}
 			}
 			.el-item__title {
 			    margin-bottom: 5px;
