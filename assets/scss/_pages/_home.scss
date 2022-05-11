@@ -334,24 +334,24 @@
 		}
 		.el__col{
 			position: relative;
-			// &:first-child{
-			// 	padding-left: var(--container-half-space);
-			// 	padding-right: 80px;
-			// 	background: linear-gradient(85.15deg, #F44369 0%, #3D2DFF 152.74%);
-			// 	&:before{
-			// 		content: '';
-			// 		position: absolute;
-			// 		top: 0;
-			// 		left: 0;
-			// 		width: 30%;
-			// 		height: 100%;
-			// 		background-image: url(../img/dao-logo.png);
-			// 		background-repeat: no-repeat;
-			// 		background-size: contain;
-			// 		z-index: -1;
-			// 		pointer-events: none;
-			// 	}
-			// }
+			&:first-child{
+				padding-left: var(--container-half-space);
+				padding-right: 80px;
+				background: linear-gradient(85.15deg, #F44369 0%, #3D2DFF 152.74%);
+				&:before{
+					content: '';
+					position: absolute;
+					top: 0;
+					left: 0;
+					width: 30%;
+					height: 100%;
+					background-image: url(../img/dao-logo.png);
+					background-repeat: no-repeat;
+					background-size: contain;
+					z-index: -1;
+					pointer-events: none;
+				}
+			}
 		}
 		.nav-dao{
 			position: absolute;
@@ -1713,9 +1713,9 @@
 		    font-size: 20px;
 		}
 		&-dao{
-			// .el__col:first-child {
-			//     padding: 50px 1.5rem;
-			// }
+			.el__col:first-child {
+			    padding: 50px 1.5rem;
+			}
 
 			.dao-arrow {
 			    left: 1.5rem;
