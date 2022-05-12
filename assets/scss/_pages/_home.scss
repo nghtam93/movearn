@@ -537,6 +537,23 @@
 				    	margin-right: 16px;
 				    }
 				}
+				ul{
+					li{
+						position: relative;
+						&:before {
+						    content: '';
+						    margin-right: 12px;
+						    position: relative;
+						    top: -4px;
+						    display: inline-block;
+						    width: 4px;
+						    height: 4px;
+						    border-radius: 50%;
+						    background: #000;
+						    margin-right: 16px;
+						}
+					}
+				}
 			}
 		}
 
