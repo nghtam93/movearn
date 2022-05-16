@@ -210,6 +210,9 @@
 			pointer-events: none;
 			animation: Mousex 8s linear infinite;
 		}
+		.sc-content {
+		    margin-top: -150px;
+		}
 		.sc-header__title{
 			font-weight: 400;
 			font-size: 90px;
@@ -641,7 +644,7 @@
 				color: #000000;
 			}
 			&__social{
-				margin-top: 24px;
+				margin-top: 16px;
 				i{
 					width: 20px;
 					height: 20px;
@@ -1554,6 +1557,9 @@
 				    line-height: 80px;
 				}
 			}
+			.sc-content {
+			    margin-top: -50px;
+			}
 			.el-items{
 				.el-item {
 				    margin-bottom: 0;
@@ -1773,6 +1779,9 @@
 				    font-size: 60px;
 				    line-height: 60px;
 				}
+			}
+			.sc-content {
+			    margin-top: -100px;
 			}
 			.el-items .el-item__thumb {
 			    max-width: 400px;

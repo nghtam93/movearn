@@ -6,6 +6,7 @@
 	max-width:100%;
 	z-index: 10;
 	padding: 20px 0;
+	background: linear-gradient(180deg, rgba(0, 0, 0, .6), transparent);
 	transition: all .5s;
 	&.-no-bg{
 		background: transparent;
