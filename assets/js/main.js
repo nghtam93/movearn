@@ -68,6 +68,22 @@ $(document).ready(function(){
             }
         });
 
+
+        var ourteamModal = document.getElementById('ourteamModal')
+        ourteamModal.addEventListener('show.bs.modal', function (event) {
+            var button = event.relatedTarget
+            console.log(button)
+
+            var title = $(button).find('.slider-item__title').html()
+            var sub = $(button).find('.slider-item__sub').html()
+            var excerpt = $(button).find('.slider-item__excerpt').html()
+
+            $('.ourteamModal__title').html(title)
+            $('.ourteamModal__sub').html(sub)
+            $('.ourteamModal__excerpt').html(excerpt)
+        })
+
+
     }
 
     //-------------------------------------------------

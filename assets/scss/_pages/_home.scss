@@ -307,10 +307,10 @@
 		}
 		.slider-item{
 			overflow: hidden;
-			padding: 0;
 			transform: translateZ(0);
 			border-radius: 48px;
-			// border: 2px solid #D3D2FF;
+			background: #fff;
+			box-shadow: 0px 11px 16px rgba(103, 120, 181, 0.25);
 			.cloudimage-360-icons-container {
 			    right: 20px;
 			    top: 20px;
@@ -318,8 +318,37 @@
 			.dnfix__thumb{
 				padding-top: 100%;
 			}
+			&__meta{
+				padding: 24px 32px;
+			}
+			&__title{
+				font-family: 'Be Vietnam Pro';
+				font-weight: 600;
+				font-size: 24px;
+				line-height: 34px;
+				text-align: center;
+				color: #F44369;
+				text-transform: uppercase;
+				margin-bottom: 16px;
+			}
+			&__option{
+				font-weight: 400;
+				font-size: 20px;
+				line-height: 24px;
+				color: #2C2C2C;
+				li{
+					display: flex;
+					justify-content: space-between;
+					&:not(:last-child){
+						margin-bottom: 5px;
+					}
+				}
+				.-label{
+					font-style: italic;
+				}
+			}
 			&__wrap{
-
+				padding: 0 0 30px;
 			}
 		}
 	}
@@ -1201,6 +1230,9 @@
 			}
 
 		}
+		&-nft .slider-item__option {
+		    font-size: 16px;
+		}
 
 	}
 	@media (max-width: 1499px){
@@ -1383,6 +1415,12 @@
 		}
 		&-nft {
 		    padding: 80px 0 120px;
+		   .slider-item__option {
+			    font-size: 14px;
+			}
+			.slider-item__meta {
+			    padding: 24px;
+			}
 		}
 		&-dao{
 			.nav-dao {
@@ -1897,6 +1935,12 @@
 			}
 
 		}
+
+		&-nft{
+			.slider-item__option li:not(:last-child) {
+			    margin-bottom: 2px;
+			}
+		}
 	}
 	@media (max-width: 575px){
 
@@ -2105,9 +2149,16 @@
 		&-team {
 		    padding: 40px 0 80px;
 		}
-		&-nft .tab__comming {
-		    font-size: 34px;
+		&-nft{
+			.slider-item__option {
+			    font-size: 16px;
+			}
+			.tab__comming {
+			    font-size: 34px;
+			}
 		}
+
+
 
 	}
 
@@ -2116,4 +2167,11 @@
 		    margin-left: -50px;
 		}
 	}
+
+	@media (min-width:576px) and (max-width:767px){
+		&-nft .slider-item__meta {
+		    padding: 24px 16px;
+		}
+	}
+
 }

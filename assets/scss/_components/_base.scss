@@ -1,6 +1,5 @@
-$color_primary:#E09B0F;$color_secondary:#BEE274;
-.-color-primary{color:$color_primary;}
-
+$color_primary:#F44369;
+$color_blue: #0974F1;;
 //Default
 html, body, div, span, applet, object, iframe,
 h1, h2, h3, h4, h5, h6, p, blockquote, pre,
@@ -56,8 +55,6 @@ body {
 a, a:hover {
     color: #FFECA7;
     text-decoration: none;
-    // transition: all 0.3s;
-
 }
 
 h1,h2,h3,h4,h5,h6 {
@@ -94,9 +91,13 @@ hr{
     background-color: #512B35;
     opacity: 1;
 }
+.fw-500{
+    font-weight: 500;
+}
 .color-pink{
     color : #F44369!important;
 }
+.-color-blue{color:$color_blue!important;}
 .ratio > * {
     object-fit: contain;
 }
@@ -104,7 +105,7 @@ hr{
     object-fit: cover;
 }
 .-color-primary{
-    color: $color_primary;
+    color: $color_primary!important;
 }
 
 .fade:not(.show) {
