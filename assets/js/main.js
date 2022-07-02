@@ -160,8 +160,8 @@ $(document).ready(function(){
     $('.menu-mb__btn').dnmenu()
 
 
-    if (window.matchMedia('(max-width: 1199px)').matches)
-    {
+    // if (window.matchMedia('(max-width: 1199px)').matches)
+    // {
       function setSliderHeightToMax(slider) {
             slider.cells.forEach(cell => cell.element.style.height = '');
 
@@ -184,7 +184,7 @@ $(document).ready(function(){
         });
 
         setTimeout(function(){ setSliderHeightToMax(flkty); }, 500);
-    }
+    // }
 
 
 
